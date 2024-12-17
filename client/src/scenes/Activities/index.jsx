@@ -6,6 +6,8 @@ import Headers from "../../components/Headers";
 import Footer from '../../components/Footer';
 // import Spline from '@splinetool/react-spline';
 
+import { activities } from "../../helper/activities";
+import { events } from "../../helper/events";
 
 const Activities = ({ activitiesData, eventsData, loading }) => {
     return (
@@ -18,29 +20,29 @@ const Activities = ({ activitiesData, eventsData, loading }) => {
                 {loading ? (
                     <div className='p-5'>Loading...</div>
                 ) : (
-                    activitiesData.map((item, index) => (
+                    activities.map((item, index) => (
                         <div key={index} className="md:flex p-8 m-8">
                             {index % 2 === 1 ? (
                                 <>
                                     <div className="flex items-center justify-center md:w-1/2">
                                         <div className="flex flex-col items-center justify-center text-center">
                                             <div>{item.details}</div>
-                                            <div className="mt-4">{item.date}</div>
+                                            <div className="mt-4" style={{ fontWeight: "bold" }}>{item.date}</div>
                                         </div>
                                     </div>
                                     <div className="flex justify-center items-center md:w-1/2">
-                                        <img className="h-80 rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Achievement" />
+                                        <img className="h-80 w-[550px] rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)] " src={item.image} alt="Achievement" />
                                     </div>
                                 </>
                             ) : (
                                 <>
                                     <div className="flex justify-center items-center md:w-1/2">
-                                        <img className="h-80 rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Achievement" />
+                                        <img className="h-80 w-[550px] rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Achievement" />
                                     </div>
                                     <div className="flex items-center justify-center md:w-1/2">
                                         <div className="flex flex-col items-center justify-center text-center">
                                             <div>{item.details}</div>
-                                            <div className="mt-4">{item.date}</div>
+                                            <div className="mt-4" style={{ fontWeight: "bold" }}>{item.date}</div>
                                         </div>
                                     </div>
                                 </>
@@ -54,7 +56,7 @@ const Activities = ({ activitiesData, eventsData, loading }) => {
                 {loading ? (
                     <div className='p-5'>Loading...</div>
                 ) : (
-                    eventsData.map((item, index) => (
+                    events.map((item, index) => (
                         <div key={index} className="md:flex p-8 m-8">
                             {index % 2 === 1 ? (
                                 <>
@@ -62,23 +64,23 @@ const Activities = ({ activitiesData, eventsData, loading }) => {
                                         <div className="flex flex-col items-center justify-center text-center">
                                             <div className="font-bold text-3xl">{item.name}</div>
                                             <div>{item.details}</div>
-                                            <div className="mt-4">{item.date}</div>
+                                            <div className="mt-4" style={{ fontWeight: "bold" }}>{item.date}</div>
                                         </div>
                                     </div>
-                                    <div className="flex justify-center items-center md                                        .w-1/2">
-                                        <img className="h-80 rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Event" />
+                                    <div className="flex justify-center items-center md:w-1/2">
+                                        <img className="h-80 w-[550px] rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Event" />
                                     </div>
                                 </>
                             ) : (
                                 <>
                                     <div className="flex justify-center items-center md:w-1/2">
-                                        <img className="h-80 rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Event" />
+                                        <img className="h-80 w-[550px] rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Event" />
                                     </div>
                                     <div className="flex items-center justify-center md:w-1/2">
                                         <div className="flex flex-col items-center justify-center text-center">
                                             <div className="font-bold text-3xl">{item.name}</div>
                                             <div>{item.details}</div>
-                                            <div className="mt-4">{item.date}</div>
+                                            <div className="mt-4" style={{ fontWeight: "bold" }}>{item.date}</div>
                                         </div>
                                     </div>
                                 </>

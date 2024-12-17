@@ -27,10 +27,10 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const achievementsResponse = await getAllachievements();
-        const activitiesResponse = await getAllactivities();
-        const eventsResponse = await getAllevents();
-        const projectsResponse = await getAllprojects();  
+        // const achievementsResponse = await getAllachievements();
+        // const activitiesResponse = await getAllactivities();
+        // const eventsResponse = await getAllevents();
+        // const projectsResponse = await getAllprojects();  
 
         // Log the responses for debugging
         console.log("Fetched achievements:", achievementsResponse);

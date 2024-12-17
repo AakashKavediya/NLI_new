@@ -113,7 +113,9 @@ import Navbar from "../../components/Navbar";
 import Headers from "../../components/Headers";
 import Footer from '../../components/Footer';
 
-const Achievements = ({ achievements = [], loading }) => {
+import { achievements } from "../../helper/achievements";
+
+const Achievements = ({ loading }) => {
   console.log("Achievements props:", { achievements, loading }); // Log the props
 
   return (
@@ -138,13 +140,13 @@ const Achievements = ({ achievements = [], loading }) => {
                       </div>
                     </div>
                     <div className="flex justify-center items-center md:w-1/2">
-                      <img className="h-80 rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Achievement" />
+                      <img className="h-80 w-[550px] rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Achievement" />
                     </div>
                   </>
                 ) : (
                   <>
                     <div className="flex justify-center items-center md:w-1/2">
-                      <img className="h-80 rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Achievement" />
+                      <img className="h-80 w-[550px] rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Achievement" />
                     </div>
                     <div className="flex items-center justify-center md:w-1/2">
                       <div className="flex flex-col items-center justify-center text-center">

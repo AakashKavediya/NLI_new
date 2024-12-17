@@ -1,7 +1,9 @@
 import React from "react";
 import Button from "./Button";
 
-function Projectscontent({ label, projects = [] }) {
+import { projects } from "../helper/projects";
+
+function Projectscontent({ label }) {
   // Safely find the project data based on the selected label
   const project = projects.find((proj) => proj.projname === label);
 

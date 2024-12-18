@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import Button from "../../components/Button";
 import CardSlider from "../../components/CardSlider";
 import Navbar from "../../components/Navbar";
-import Headers from "../../components/Headers";
-import Foundercard from "../../components/Foundercard";
 
 import Footer from "../../components/Footer";
 

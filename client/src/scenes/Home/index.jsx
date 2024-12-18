@@ -222,9 +222,15 @@ function Home() {
                 </div>
               </div>
               <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
-                <div className="overflow-auto w-[700px] h-[500px] rounded-lg">
-                  <img src={beliefsat1} alt="Large Image" className="w-[50vh] md:w-full h-auto" />
-                </div>
+              <Link to="/projects" className="block">
+                      <img
+                        // className="w-screen h-[90vh] duration-700 ease-in-out group-hover:scale-105"
+                        className="w-[150vh] h-[90vh]"
+                        src={beliefsat1}
+                        alt=""
+                        srcset=""
+                      />
+                    </Link>
                 <div className="mt-4">
                   <div className="flex space-x-2 mb-3">
                     <p className="rounded-full bg-transparent border text-[#FFFFFF] border-secondary-600 flex justify-center items-center px-4 py-1 text-secondary-600 text-body-4 2xl:text-3xl">
@@ -240,14 +246,15 @@ function Home() {
               </div>
               <div className="col-span-1 pt-0 md:col-span-5 md:pt-[100px]">
                 <div>
-                  <div className="img group inline-block overflow-hidden duration-200 ease-linear hover:rounded-3xl">
-                    <img
-                      className="w-screen duration-700 ease-in-out group-hover:scale-105"
-                      src={avruti}
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
+                <Link to="/projects" className="block">
+                      <img
+                        // className="w-screen h-[90vh] duration-700 ease-in-out group-hover:scale-105"
+                        className="w-[150vh] h-[90vh]"
+                        src={avruti}
+                        alt=""
+                        srcset=""
+                      />
+                    </Link>
                 </div>
                 <div className="mt-4">
                   <div className="flex space-x-2 mb-3">

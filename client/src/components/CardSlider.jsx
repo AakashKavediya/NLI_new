@@ -14,20 +14,11 @@ const CardSlider = ({ label }) => {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Ensure teams is an array before setting it
-  useEffect(() => {
-    if (Array.isArray(teams)) {
-      setItems(teams); // Set the JSON data into state
-      console.log('Initial teams data:', teams); // Log the teams data
-    } else {
-      console.error('The teams data is not an array or is undefined');
-    }
-  }, []); // This will run only once on initial render
+
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        console.log('Teams data inside second useEffect:', teams);
 
         // Filter teams based on the label (project1, project2, or project3)
         const newRows = teams
@@ -53,7 +44,7 @@ const CardSlider = ({ label }) => {
             email: item.email,
           }));
 
-        setImages(newRows); // Update state with filtered data
+        setImages(newRows);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -65,7 +56,7 @@ const CardSlider = ({ label }) => {
   }, [label]); // Re-run when the label changes
 
   const [currentPage, setCurrentPage] = useState(1);
-  const imagesPerPage = 10;
+  const imagesPerPage = 30;
 
   const indexOfLastImage = currentPage * imagesPerPage;
   const indexOfFirstImage = indexOfLastImage - imagesPerPage;
@@ -99,8 +90,16 @@ const CardSlider = ({ label }) => {
                       {image.Domain}
                     </span>
                   </div>
-                  <h3 className="text-white font-semibold">{`${image.fname} ${image.lname}`}</h3>
-                  <p className="text-white text-sm">{image.About}</p>
+                  <h3 className="text-white">{`${image.fname} ${image.lname}`}</h3>
+
+                  <p className="text-white">
+                    {
+                      (image.About.trim().split(" ").length > 25)
+                        ? `${image.About.trim().split(" ").slice(0, 25).join(" ")}...`
+                        : image.About.trim()
+                    }
+                  </p>
+                  {/* <p className="text-white text-sm">{image.About}</p> */}
                   <div className="mt-2">
                     <button
                       onClick={() => handleButtonClick(image)}
@@ -115,12 +114,12 @@ const CardSlider = ({ label }) => {
           </div>
 
           {/* Pagination Component */}
-          <Pagination
+          {/* <Pagination
             itemsPerPage={imagesPerPage}
             totalItems={images.length}
             paginate={paginate}
             currentPage={currentPage}
-          />
+          /> */}
         </div>
       )}
     </>

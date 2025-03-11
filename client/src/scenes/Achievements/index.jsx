@@ -108,15 +108,26 @@
 
 // src/scenes/Achievements/index.jsx
 
-import React from 'react';
+import {React , useState , useEffect} from 'react';
 import Navbar from "../../components/Navbar";
 import Headers from "../../components/Headers";
 import Footer from '../../components/Footer';
 
 import { achievements } from "../../helper/achievements";
 
+
+
+
 const Achievements = ({ loading }) => {
   console.log("Achievements props:", { achievements, loading }); // Log the props
+
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setViewportWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
   return (
     <>
@@ -131,7 +142,8 @@ const Achievements = ({ loading }) => {
           Array.isArray(achievements) && achievements.length > 0 ? ( // Ensure achievements is an array
             achievements.map((item, index) => (
               <div key={index} className="md:flex p-8 m-8">
-                {index % 2 === 1 ? (
+                {viewportWidth >= 768 ? (
+                index % 2 === 1 ? (
                   <>
                     <div className="flex items-center justify-center md:w-1/2">
                       <div className="flex flex-col items-center justify-center text-center">
@@ -155,6 +167,18 @@ const Achievements = ({ loading }) => {
                       </div>
                     </div>
                   </>
+                )) : (
+                  <>
+                  <div className="flex justify-center items-center md:w-1/2">
+                    <img className="h-80 w-[550px] rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Achievement" />
+                  </div>
+                  <div className="flex items-center justify-center md:w-1/2">
+                    <div className="flex flex-col items-center justify-center text-center">
+                      <div>{item.details}</div>
+                      <div className="mt-4">{item.date}</div>
+                    </div>
+                  </div>
+                </>
                 )}
               </div>
             ))

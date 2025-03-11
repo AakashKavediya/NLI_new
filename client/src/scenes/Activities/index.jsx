@@ -1,15 +1,19 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
-import software from "../../assets/software.png";
-import { getAllactivities, getAllevents } from '../../helper/helper';
-import Headers from "../../components/Headers";
-import Footer from '../../components/Footer';
-// import Spline from '@splinetool/react-spline';
-
 import { activities } from "../../helper/activities";
 import { events } from "../../helper/events";
+import Headers from "../../components/Headers";
+import Footer from "../../components/Footer";
 
 const Activities = ({ activitiesData, eventsData, loading }) => {
+    const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setViewportWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <>
             <Navbar bgcolor="#fafaf9" textColor="#000000" active={"activities"} />
@@ -18,31 +22,45 @@ const Activities = ({ activitiesData, eventsData, loading }) => {
                     <Headers title="Activities" size="12vh" />
                 </div>
                 {loading ? (
-                    <div className='p-5'>Loading...</div>
+                    <div className="p-5">Loading...</div>
                 ) : (
                     activities.map((item, index) => (
                         <div key={index} className="md:flex p-8 m-8">
-                            {index % 2 === 1 ? (
-                                <>
-                                    <div className="flex items-center justify-center md:w-1/2">
-                                        <div className="flex flex-col items-center justify-center text-center">
-                                            <div>{item.details}</div>
-                                            <div className="mt-4" style={{ fontWeight: "bold" }}>{item.date}</div>
+                            {viewportWidth >= 768 ? (
+                                index % 2 === 1 ? (
+                                    <>
+                                        <div className="flex items-center justify-center md:w-1/2">
+                                            <div className="flex flex-col items-center justify-center text-center">
+                                                <div>{item.details}</div>
+                                                <div className="mt-4 font-bold">{item.date}</div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="flex justify-center items-center md:w-1/2">
-                                        <img className="h-80 w-[550px] rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)] " src={item.image} alt="Achievement" />
-                                    </div>
-                                </>
+                                        <div className="flex justify-center items-center md:w-1/2">
+                                            <img className="h-80 w-[550px] rounded-2xl shadow-lg" src={item.image} alt="Achievement" />
+                                        </div>
+                                    </>
+                                ) : (
+                                    <>
+                                        <div className="flex justify-center items-center md:w-1/2">
+                                            <img className="h-80 w-[550px] rounded-2xl shadow-lg" src={item.image} alt="Achievement" />
+                                        </div>
+                                        <div className="flex items-center justify-center md:w-1/2">
+                                            <div className="flex flex-col items-center justify-center text-center">
+                                                <div>{item.details}</div>
+                                                <div className="mt-4 font-bold">{item.date}</div>
+                                            </div>
+                                        </div>
+                                    </>
+                                )
                             ) : (
                                 <>
                                     <div className="flex justify-center items-center md:w-1/2">
-                                        <img className="h-80 w-[550px] rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Achievement" />
+                                        <img className="h-80 w-[550px] rounded-2xl shadow-lg" src={item.image} alt="Achievement" />
                                     </div>
                                     <div className="flex items-center justify-center md:w-1/2">
                                         <div className="flex flex-col items-center justify-center text-center">
                                             <div>{item.details}</div>
-                                            <div className="mt-4" style={{ fontWeight: "bold" }}>{item.date}</div>
+                                            <div className="mt-4 font-bold">{item.date}</div>
                                         </div>
                                     </div>
                                 </>
@@ -50,37 +68,53 @@ const Activities = ({ activitiesData, eventsData, loading }) => {
                         </div>
                     ))
                 )}
+
                 <div className="text-center font-bold md:text-5xl">
                     <Headers title="Events" size="12vh" />
                 </div>
                 {loading ? (
-                    <div className='p-5'>Loading...</div>
+                    <div className="p-5">Loading...</div>
                 ) : (
                     events.map((item, index) => (
                         <div key={index} className="md:flex p-8 m-8">
-                            {index % 2 === 1 ? (
-                                <>
-                                    <div className="flex items-center justify-center md:w-1/2">
-                                        <div className="flex flex-col items-center justify-center text-center">
-                                            <div className="font-bold text-3xl">{item.name}</div>
-                                            <div>{item.details}</div>
-                                            <div className="mt-4" style={{ fontWeight: "bold" }}>{item.date}</div>
+                            {viewportWidth >= 768 ? (
+                                index % 2 === 1 ? (
+                                    <>
+                                        <div className="flex items-center justify-center md:w-1/2">
+                                            <div className="flex flex-col items-center justify-center text-center">
+                                                <div className="font-bold text-3xl">{item.name}</div>
+                                                <div>{item.details}</div>
+                                                <div className="mt-4 font-bold">{item.date}</div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="flex justify-center items-center md:w-1/2">
-                                        <img className="h-80 w-[550px] rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Event" />
-                                    </div>
-                                </>
+                                        <div className="flex justify-center items-center md:w-1/2">
+                                            <img className="h-80 w-[550px] rounded-2xl shadow-lg" src={item.image} alt="Event" />
+                                        </div>
+                                    </>
+                                ) : (
+                                    <>
+                                        <div className="flex justify-center items-center md:w-1/2">
+                                            <img className="h-80 w-[550px] rounded-2xl shadow-lg" src={item.image} alt="Event" />
+                                        </div>
+                                        <div className="flex items-center justify-center md:w-1/2">
+                                            <div className="flex flex-col items-center justify-center text-center">
+                                                <div className="font-bold text-3xl">{item.name}</div>
+                                                <div>{item.details}</div>
+                                                <div className="mt-4 font-bold">{item.date}</div>
+                                            </div>
+                                        </div>
+                                    </>
+                                )
                             ) : (
                                 <>
                                     <div className="flex justify-center items-center md:w-1/2">
-                                        <img className="h-80 w-[550px] rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Event" />
+                                        <img className="h-80 w-[550px] rounded-2xl shadow-lg" src={item.image} alt="Event" />
                                     </div>
                                     <div className="flex items-center justify-center md:w-1/2">
                                         <div className="flex flex-col items-center justify-center text-center">
                                             <div className="font-bold text-3xl">{item.name}</div>
                                             <div>{item.details}</div>
-                                            <div className="mt-4" style={{ fontWeight: "bold" }}>{item.date}</div>
+                                            <div className="mt-4 font-bold">{item.date}</div>
                                         </div>
                                     </div>
                                 </>
@@ -95,4 +129,3 @@ const Activities = ({ activitiesData, eventsData, loading }) => {
 };
 
 export default Activities;
-

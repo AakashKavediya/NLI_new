@@ -116,7 +116,7 @@ function Home() {
               }}
               initial="hidden"
               animate="visible"
-              className="title text-5xl sm:text-9xl text-[#FFFFFF] py-20 "
+              className="title text-5xl sm:text-9xl text-[#FFFFFF] py-[6rem] "
             >
               <h1 className=" overflow-visible">New Leap Labs</h1>
               <h1
@@ -174,18 +174,18 @@ function Home() {
               #webelieve
             </span>
           </motion.div> */}
-          <div className="absolute bottom-12 mb-[25vh] right-0 text-[#FFFFFF] flex flex-col items-center justify-center space-y-8">
+          <div className="absolute mb-[25vh] right-0 text-[#FFFFFF] flex flex-col items-center justify-center space-y-8 sm: bottom-[-9rem] md: bottom-[1rem]">
             <span className="rotate-90 text-body-3 text-2xl  ">
               #webelieve
             </span>
           </div>
-        </section>
+        </section> 
 
         {/* black */}
         <main className="start h-max px-5 md:px-10 mt-[-25vh] xl:px-20 2xl:px-28">
-          <section className="about select-none flex my-20 md:mb-[3%] py-5 flex-col items-center justify-center overflow-hidden ">
+          <section className="about select-none flex my-5 md:mb-[3%] py-5 flex-col items-center justify-center overflow-hidden ">
             <div className=" flex w-full items-center space-x-20">
-              <h1 className=" text-heading-1 text-[1.5rem] font-serif text-[#FFFFFF] leading-[1.25em] md:text-[2.5rem]">
+              <h1 className="mt-[10rem] text-heading-1 text-[1.5rem] font-serif text-[#FFFFFF] leading-[1.25em] md:text-[2.5rem] sm:mt-[0rem]">
                 We foster innovation by inspiring students in satellite technology, contributing towards prestigious awards, and advancing indigenous nano-satellite development for societal impact.
               </h1>
             </div>
@@ -207,14 +207,14 @@ function Home() {
                       />
                     </Link>
                   </div>
-                  <div className="ml-[25vh] mt-4">
+                  <div className="md:ml-[25vh] mt-4">
                     <div className="flex space-x-2 mb-3">
                       <p className="rounded-full bg-transparent border text-[#FFFFFF] border-secondary-600 flex justify-center items-center px-4 py-1 text-secondary-600 text-body-4 2xl:text-3xl">
                         2018
                       </p>
                     </div>
-                    <div className="2xl:space-y-3">
-                      <h3 className=" text-3xl font-medium uppercase text-[#FFFFFF] text-primary-200">
+                    <div className="2xl:space-y-3 ">
+                      <h3 className="text-3xl font-medium uppercase text-[#FFFFFF] text-primary-200">
                         BeliefSat-1
                       </h3>
                     </div>

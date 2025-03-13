@@ -1,41 +1,44 @@
 import React from "react";
 import Button from "./Button";
-
 import { projects } from "../helper/projects";
 
 function Projectscontent({ label }) {
-  // Safely find the project data based on the selected label
   const project = projects.find((proj) => proj.projname === label);
-
-
 
   const redirectTo = (link) => {
     window.location.href = link;
   };
 
   return (
-    <div>
+    <div className="p-5">
       {!project ? (
-        <div className="p-5 text-2xl">Project not found.</div>
+        <div className="text-xl md:text-2xl text-center">Project not found.</div>
       ) : (
         <>
+          {/* Image or Video Section */}
           <div className="flex items-center justify-center rounded-3xl">
             {project.photo ? (
               <img
-                className="w-1/2 h-1/2 md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)] rounded-3xl"
+                className="w-full md:w-1/2 h-auto md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)] rounded-3xl"
                 style={{ maxHeight: "70vh", maxWidth: "100vh" }}
                 src={project.photo}
                 alt="Project"
-                loading="lazy" // Lazy loading the image
+                loading="lazy"
               />
             ) : (
-              <p className="text-2xl">No image available.</p>
+              <p className="text-lg md:text-2xl text-center">No image available.</p>
             )}
           </div>
-          <div className="text m-5">
-            <p className="text-2xl leading-8 tracking-wide">{project.about || "No information available."}</p>
+
+          {/* Project Description */}
+          <div className="text m-2">
+            <p className="text-base md:text-2xl leading-6 md:leading-8 tracking-wide text-justify">
+              {project.about || "No information available."}
+            </p>
           </div>
-          <div className="flex flex-row m-2">
+
+          {/* Buttons Section */}
+          <div className="flex flex-wrap gap-2 justify-center m-2">
             {project.link1 && (
               <Button
                 onClick={() => redirectTo(project.link1)}

@@ -146,7 +146,7 @@ const Achievements = ({ loading }) => {
                 index % 2 === 1 ? (
                   <>
                     <div className="flex items-center justify-center md:w-1/2">
-                      <div className="flex flex-col items-center justify-center text-center">
+                      <div className="flex flex-col items-center justify-center text-justify">
                         <div>{item.details}</div>
                         <div className="mt-4">{item.date}</div>
                       </div>
@@ -161,7 +161,7 @@ const Achievements = ({ loading }) => {
                       <img className="h-80 w-[550px] rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Achievement" />
                     </div>
                     <div className="flex items-center justify-center md:w-1/2">
-                      <div className="flex flex-col items-center justify-center text-center">
+                      <div className="flex flex-col items-center justify-center text-justify">
                         <div>{item.details}</div>
                         <div className="mt-4">{item.date}</div>
                       </div>
@@ -173,7 +173,7 @@ const Achievements = ({ loading }) => {
                     <img className="h-80 w-[550px] rounded-2xl md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)]" src={item.image} alt="Achievement" />
                   </div>
                   <div className="flex items-center justify-center md:w-1/2">
-                    <div className="flex flex-col items-center justify-center text-center">
+                    <div className="m-2 flex flex-col items-center justify-center text-justify">
                       <div>{item.details}</div>
                       <div className="mt-4">{item.date}</div>
                     </div>

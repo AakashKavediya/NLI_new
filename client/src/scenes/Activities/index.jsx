@@ -25,12 +25,12 @@ const Activities = ({ activitiesData, eventsData, loading }) => {
                     <div className="p-5">Loading...</div>
                 ) : (
                     activities.map((item, index) => (
-                        <div key={index} className="md:flex p-8 m-8">
+                        <div key={index} className="md:flex p-8 m-8">   
                             {viewportWidth >= 768 ? (
                                 index % 2 === 1 ? (
                                     <>
                                         <div className="flex items-center justify-center md:w-1/2">
-                                            <div className="flex flex-col items-center justify-center text-center">
+                                            <div className="flex flex-col items-center justify-center text-justify">
                                                 <div>{item.details}</div>
                                                 <div className="mt-4 font-bold">{item.date}</div>
                                             </div>
@@ -45,7 +45,7 @@ const Activities = ({ activitiesData, eventsData, loading }) => {
                                             <img className="h-80 w-[550px] rounded-2xl shadow-lg" src={item.image} alt="Achievement" />
                                         </div>
                                         <div className="flex items-center justify-center md:w-1/2">
-                                            <div className="flex flex-col items-center justify-center text-center">
+                                            <div className="flex flex-col items-center justify-center text-justify">
                                                 <div>{item.details}</div>
                                                 <div className="mt-4 font-bold">{item.date}</div>
                                             </div>
@@ -58,7 +58,7 @@ const Activities = ({ activitiesData, eventsData, loading }) => {
                                         <img className="h-80 w-[550px] rounded-2xl shadow-lg" src={item.image} alt="Achievement" />
                                     </div>
                                     <div className="flex items-center justify-center md:w-1/2">
-                                        <div className="flex flex-col items-center justify-center text-center">
+                                        <div className="flex flex-col items-center justify-center text-justify">
                                             <div>{item.details}</div>
                                             <div className="mt-4 font-bold">{item.date}</div>
                                         </div>
@@ -81,7 +81,7 @@ const Activities = ({ activitiesData, eventsData, loading }) => {
                                 index % 2 === 1 ? (
                                     <>
                                         <div className="flex items-center justify-center md:w-1/2">
-                                            <div className="flex flex-col items-center justify-center text-center">
+                                            <div className="flex flex-col items-center justify-center text-justify">
                                                 <div className="font-bold text-3xl">{item.name}</div>
                                                 <div>{item.details}</div>
                                                 <div className="mt-4 font-bold">{item.date}</div>
@@ -97,9 +97,9 @@ const Activities = ({ activitiesData, eventsData, loading }) => {
                                             <img className="h-80 w-[550px] rounded-2xl shadow-lg" src={item.image} alt="Event" />
                                         </div>
                                         <div className="flex items-center justify-center md:w-1/2">
-                                            <div className="flex flex-col items-center justify-center text-center">
+                                            <div className="flex flex-col items-center justify-center text-justify">
                                                 <div className="font-bold text-3xl">{item.name}</div>
-                                                <div>{item.details}</div>
+                                                <div>{item.details}</div>x
                                                 <div className="mt-4 font-bold">{item.date}</div>
                                             </div>
                                         </div>
@@ -111,7 +111,7 @@ const Activities = ({ activitiesData, eventsData, loading }) => {
                                         <img className="h-80 w-[550px] rounded-2xl shadow-lg" src={item.image} alt="Event" />
                                     </div>
                                     <div className="flex items-center justify-center md:w-1/2">
-                                        <div className="flex flex-col items-center justify-center text-center">
+                                        <div className="flex flex-col items-center justify-center text-justify">
                                             <div className="font-bold text-3xl">{item.name}</div>
                                             <div>{item.details}</div>
                                             <div className="mt-4 font-bold">{item.date}</div>

@@ -16,7 +16,7 @@ const Navbar = ({ bgcolor, textColor, active }) => {
 
   console.log(active)
   return (
-    <div className="w-[45vh] mr-0 ml-0 md:w-full z-20 fixed top-0 left-0 right-0 font-poppins flex justify-between items-center h-20  mx-auto px-6  text-black" style={{ backgroundColor: bgcolor, color: textColor, transition: "0.3 ease-in-out" }}>
+    <div className="w-[45vh] mr-0 ml-0 md:w-full z-20 fixed top-0 left-0 right-0 font-poppins flex justify-between items-center h-20  mx-auto px-6 " style={{ backgroundColor: bgcolor, color: textColor, transition: "0.3 ease-in-out" }}>
       <div className="flex  justify-between items-center">
         <img src={logo} className="h-12 w-auto rounded-full border border-black"></img>
         <div className="p-2 text-2xl font-bold font-serif">New Leap Labs</div>
@@ -84,7 +84,7 @@ const Navbar = ({ bgcolor, textColor, active }) => {
             }
 
           </div>
-          {dropdown ? <ul className="absolute mt-2 right-1 flex flex-col top-18 gap-2 bg-white/70 backdrop-blur-sm">
+          {dropdown ? <ul className="absolute mt-2 right-1 flex flex-col top-18 gap-2 bg-white/90 backdrop-blur-sm text-black">
             <li>
               <div className="mt-2 text-center">
                 <Link to="/teams" className="text-center">
@@ -176,7 +176,7 @@ const Navbar = ({ bgcolor, textColor, active }) => {
             }
 
           </div>
-          {dropdown ? <ul className="mt-2 flex flex-col top-18 gap-2 bg-white backdrop-blur-none">
+          {dropdown ? <ul className="mt-2 flex flex-col top-18 gap-2 bg-white/90 text-black backdrop-blur-none">
 
             <li>
               <div className="mt-2 text-center">

@@ -51,9 +51,9 @@ function Home() {
   return (
     <>
       
-      <Navbar bgcolor={"#000000"} textColor={"#FFFFFF"} active={"home"} />
+      <Navbar bgcolor={"#FFFFFF"} textColor={"#00000"} active={"home"} />
       {/* <img className="absolute  w-[2000vh] h-[500vh] " src={earth} alt="" /> */}
-      <div className="home bg-black" >
+      <div className="home " >
         <section className="hero relative flex h-[50vh] sm:h-[120vh] py-2 sm:py-15 w-full overflow-hidden justify-center">
   <div className="z-10 py-10 sm:py-20 flex flex-col w-full items-center text-title font-bold uppercase text-accent-300 font-[poppins] reduced-letter-spacing">
     <motion.div
@@ -64,7 +64,7 @@ function Home() {
       }}
       initial="hidden"
       animate="visible"
-      className="title text-3xl sm:text-5xl md:text-7xl lg:text-9xl text-[#FFFFFF] py-10 sm:py-[6rem] text-center"
+      className="title text-3xl sm:text-5xl md:text-7xl lg:text-9xl text-[#FFFFFF] py-[5rem] sm:py-[8rem] text-center"
     >
       <h1 className="overflow-visible">New Leap Labs</h1>
       <h1 className="text-transparent font-outline-4 flex justify-center overflow-visible py-5 sm:py-20">
@@ -74,19 +74,23 @@ function Home() {
   </div>
 
   <motion.div
-    initial={{ scale: 2, opacity: 0 }}
-    animate={{ scale: 1, opacity: 1 }}
-    transition={{ duration: 2 }}
-    className="intro absolute mx-auto w-[90%] sm:w-[55%] md:w-[100%] h-[60%] sm:h-[80%]"
-  >
-    <motion.img
-      src={space}
-      alt=""
-      className="w-full h-full object-cover rounded-md opacity-50"
-    />
-  </motion.div>
+  initial={{ scale: 2, opacity: 0 }}
+  animate={{ scale: 1, opacity: 1 }}
+  transition={{ duration: 2 }}
+  className="intro absolute mx-auto w-[70%] sm:w-[60%] md:w-[85%] h-[60%] sm:h-[75%] flex justify-center items-center overflow-hidden"
+>
+  <motion.img
+    src={space}
+    alt=""
+    className="w-full md:h-[100vh] rounded-md opacity-100"
+    style={{
+      objectPosition: "top", // Ensures cropping happens from the top
+    }}
+  />
+</motion.div>
 
-  <div className="absolute bottom-[9rem] sm:bottom-[6rem] right-0 text-[#FFFFFF] flex flex-col items-center justify-center space-y-4 sm:space-y-8">
+
+  <div className="absolute bottom-[9rem] sm:bottom-[6rem] right-0 text-[#00000] flex flex-col items-center justify-center space-y-4 sm:space-y-8">
     <span className="rotate-90 text-lg sm:text-lg md:text-3xl">#webelieve</span>
   </div>
 </section>
@@ -95,7 +99,7 @@ function Home() {
 <main className="start h-max px-5 md:px-10 mt-[-15vh] sm:mt-[-25vh] xl:px-20 2xl:px-28">
   <section className="about select-none flex my-5 md:mb-[3%] py-5 flex-col items-center justify-center overflow-hidden">
     <div className="flex w-full flex-col md:flex-row items-center md:space-x-20 text-center md:text-left">
-      <h1 className="mt-0 sm:mt-[5rem] text-lg sm:text-2xl md:text-2xl lg:text-3xl font-serif text-[#FFFFFF] leading-[1.5em]">
+      <h1 className="mt-0 sm:mt-[5rem] text-lg sm:text-2xl md:text-2xl lg:text-3xl font-serif text-[#00000] leading-[1.5em]">
         We foster innovation by inspiring students in satellite technology, contributing towards prestigious awards, and advancing indigenous nano-satellite development for societal impact.
       </h1>
     </div>
@@ -112,7 +116,7 @@ function Home() {
         <div className="img group flex items-center justify-center overflow-hidden duration-200 ease-linear hover:rounded-3xl">
           <Link to="/projects" className="block">
             <img
-              className="w-full h-auto md:w-[150vh] md:h-[90vh]"
+              className="w-full h-auto md:w-[150vh] md:h-[90vh] border border-black"
               src={beliefsat}
               alt="BeliefSat-1"
             />
@@ -120,12 +124,12 @@ function Home() {
         </div>
         <div className="md:ml-[25vh] mt-4 text-center md:text-left">
           <div className="flex justify-center md:justify-start space-x-2 mb-3">
-            <p className="rounded-full bg-transparent border text-[#FFFFFF] border-secondary-600 flex justify-center items-center px-4 py-1 text-secondary-600 text-body-4 2xl:text-3xl">
+            <p className="rounded-full bg-transparent border border-black text-[#00000] border-secondary-600 flex justify-center items-center px-4 py-1 text-secondary-600 text-body-4 2xl:text-3xl">
               2018
             </p>
           </div>
           <div className="2xl:space-y-3">
-            <h3 className="text-3xl font-medium uppercase text-[#FFFFFF] text-primary-200">
+            <h3 className="text-3xl font-medium uppercase text-[#00000] text-primary-200">
               BeliefSat-1
             </h3>
           </div>
@@ -135,19 +139,19 @@ function Home() {
     <div className="col-span-1 sm:pt-5 md:col-span-7 md:pt-16">
       <Link to="/projects" className="block">
         <img
-          className="w-full h-auto md:w-[150vh] md:h-[90vh]"
+          className="w-full h-auto md:w-[150vh] md:h-[90vh] border border-black"
           src={beliefsat1}
           alt="Ground Station"
         />
       </Link>
       <div className="mt-4 text-center md:text-left">
         <div className="flex justify-center md:justify-start space-x-2 mb-3">
-          <p className="rounded-full bg-transparent border text-[#FFFFFF] border-secondary-600 flex justify-center items-center px-4 py-1 text-secondary-600 text-body-4 2xl:text-3xl">
+          <p className="rounded-full bg-transparent border border-black text-[#00000] border-secondary-600 flex justify-center items-center px-4 py-1 text-secondary-600 text-body-4 2xl:text-3xl">
             2019
           </p>
         </div>
         <div className="2xl:space-y-3">
-          <h3 className="text-3xl font-medium uppercase text-[#FFFFFF] text-primary-200">
+          <h3 className="text-3xl font-medium uppercase text-[#00000] text-primary-200">
             Ground Station
           </h3>
         </div>
@@ -157,7 +161,7 @@ function Home() {
       <div>
         <Link to="/projects" className="block">
           <img
-            className="w-full h-auto md:w-[150vh] md:h-[90vh]"
+            className="w-full h-auto md:w-[150vh] md:h-[90vh] border border-black"
             src={avruti}
             alt="Avruti"
           />
@@ -165,12 +169,12 @@ function Home() {
       </div>
       <div className="mt-4 text-center md:text-left">
         <div className="flex justify-center md:justify-start space-x-2 mb-3">
-          <p className="rounded-full bg-transparent border border-secondary-600 flex justify-center items-center px-4 py-1 text-secondary-600 text-body-4 2xl:text-3xl text-[#FFFFFF]">
+          <p className="rounded-full bg-transparent border border-black border-secondary-600 flex justify-center items-center px-4 py-1 text-secondary-600 text-body-4 2xl:text-3xl text-[#00000]">
             2023
           </p>
         </div>
         <div className="2xl:space-y-3">
-          <h3 className="text-3xl font-medium uppercase text-primary-200 text-[#FFFFFF]">
+          <h3 className="text-3xl font-medium uppercase text-primary-200 text-[#00000]">
             Avruti
           </h3>
         </div>
@@ -183,7 +187,7 @@ function Home() {
             <Headers title="Domains" size="13vh" />
             {viewportWidth >= 768 ? (
               <div>
-                <div className="text-[#FFFFFF] ">
+                <div className="text-[#00000] ">
                   {/* First Row */}
                   <div className="items-center justify-center md:flex justify-center">
                     <CardsDomain

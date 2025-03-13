@@ -19,7 +19,7 @@ function Projectscontent({ label }) {
           <div className="flex items-center justify-center rounded-3xl">
             {project.photo ? (
               <img
-                className="w-full md:w-1/2 h-auto md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)] rounded-3xl"
+                className="w-[110%] h-[22rem] md:h-auto md:w-1/2 md:shadow-[0px_0px_50px_15px_rgba(0,0,0,0.3)] rounded-3xl"
                 style={{ maxHeight: "70vh", maxWidth: "100vh" }}
                 src={project.photo}
                 alt="Project"

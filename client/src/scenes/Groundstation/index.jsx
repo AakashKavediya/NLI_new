@@ -39,9 +39,9 @@ function GroundStation() {
             The ground station is essential for satellite communication, serving as a hub for data acquisition, control, and payload transmission. It includes advanced antennas, receivers, and transmitters. The ground system comprises ground stations and control centers working together to support spacecraft and users. Transceivers in these stations are crucial for data transmission, telemetry, and command operations, ensuring reliable communication with satellites. Satellite tracking uses QFH, monopole, and Yagi-Uda antennas, with signal reception through SDRs or Baofengs and image reception using SDRs and decoding software.
           </div>
 
-          <div className="gstypes">
+          <div className="gstypes mt-6">
             <Headers title="ANTENNA TYPES" size="6vh" />
-            <div className="container mx-auto p-10">
+            <div className="container mx-auto p-2">
               <div className={`${viewportWidth >= 768 ? "grid grid-cols-2 gap-8" : "grid grid-cols-1 gap-8"}`}>
                 {antennas.map((item) => (
                   <div

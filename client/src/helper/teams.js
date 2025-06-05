@@ -11,7 +11,7 @@ import Hitanshu from "../assets/Hitanshu.jpg";
 import RohitKhandekar from "../assets/RohitKhandekar.jpg";
 import Jyoti from "../assets/Jyoti.jpg";
 import Akshay from "../assets/Akshay.jpg";
-import Rhythm from "../assets/Rhythm.jpg";
+// import Rhythm from "../assets/Rhythm.jpg";
 import Pavan from "../assets/Pavan.jpg";
 import Dhriti from "../assets/Dhriti.jpg";
 import Parshwa from "../assets/Parshwa.jpg";
@@ -136,22 +136,22 @@ export const teams = [
     email: "pgangapurwala@gmail.com",
     profile: Pratik,
   },
-  {
-    fname: "Pranav",
-    lname: "Narkhede",
-    yearleft: 0,
-    active: true,
-    project1: "Beliefsat-0",
-    project2: "Crown-GS",
-    project3: "na",
-    domain: "Radio Frequency",
-    departmentclg: "AI-DS",
-    about: "Fun",
-    linkedin:
-      "https://www.linkedin.com/in/pranav-narkhede-0793a3261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    email: "pranav.narkhede@somaiya.edu",
-    profile: Pranav,
-  },
+  // {
+  //   fname: "Pranav",
+  //   lname: "Narkhede",
+  //   yearleft: 0,
+  //   active: true,
+  //   project1: "Beliefsat-0",
+  //   project2: "Crown-GS",
+  //   project3: "na",
+  //   domain: "Radio Frequency",
+  //   departmentclg: "AI-DS",
+  //   about: "Fun",
+  //   linkedin:
+  //     "https://www.linkedin.com/in/pranav-narkhede-0793a3261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  //   email: "pranav.narkhede@somaiya.edu",
+  //   profile: Pranav,
+  // },
   {
     fname: "Chaitanya",
     lname: "Kasambe",
@@ -232,22 +232,22 @@ export const teams = [
     email: "akshay.hj30@gmail.com",
     profile: Akshay,
   },
-  {
-    fname: "Rhythm",
-    lname: "Bhatt",
-    yearleft: 2022,
-    active: true,
-    project1: "Beliefsat-1",
-    project2: "Somaiya-Pod",
-    project3: "na",
-    domain: "Non Technical",
-    departmentclg: "Computer Engineering",
-    about:
-      "- Started as a Product Trainee in May 2020. \n- Learned Fusion 360, and Eagle during my training. \n- Worked on V2 of Somaiya POD. \n- Fabricated POD and did Functional Testing. \n- Meeting with Dcubed. \n- Promoted to Project Manager. \n- Worked on PCB Testing. \n- Started working on V3 of PCBs of Beliefsat-1. \n- Initiated weekly Knowledge Transfer sessions. \n- Put NLI to a social media front. \n- Conducted 'Expert Talk on Propulsion Engineering and Space Technology' by Ishita Ranade.",
-    linkedin: "https://www.linkedin.com/in/rhythmbhatt/",
-    email: "rhythm.bhatt@somaiya.edu",
-    profile: Rhythm,
-  },
+  // {
+  //   fname: "Rhythm",
+  //   lname: "Bhatt",
+  //   yearleft: 2022,
+  //   active: true,
+  //   project1: "Beliefsat-1",
+  //   project2: "Somaiya-Pod",
+  //   project3: "na",
+  //   domain: "Non Technical",
+  //   departmentclg: "Computer Engineering",
+  //   about:
+  //     "- Started as a Product Trainee in May 2020. \n- Learned Fusion 360, and Eagle during my training. \n- Worked on V2 of Somaiya POD. \n- Fabricated POD and did Functional Testing. \n- Meeting with Dcubed. \n- Promoted to Project Manager. \n- Worked on PCB Testing. \n- Started working on V3 of PCBs of Beliefsat-1. \n- Initiated weekly Knowledge Transfer sessions. \n- Put NLI to a social media front. \n- Conducted 'Expert Talk on Propulsion Engineering and Space Technology' by Ishita Ranade.",
+  //   linkedin: "https://www.linkedin.com/in/rhythmbhatt/",
+  //   email: "rhythm.bhatt@somaiya.edu",
+  //   profile: Rhythm,
+  // },
   {
     fname: "Pavan",
     lname: "Jangam",

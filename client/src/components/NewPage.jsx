@@ -56,7 +56,7 @@ const NewPage = () => {
             </div>
             <div className="details [@media(max-width:800px)]:p-1 ">
               <ol className="flex  flex-row">
-                <li className="m-2 text-2xl font-bold">KJSIT</li>
+                <li className="m-2 text-2xl font-bold">KJSIT</li> 
                 <li className="m-2 text-lg md:m-2 text-2xl">{location.state.College} Department</li>
               </ol>
             </div>

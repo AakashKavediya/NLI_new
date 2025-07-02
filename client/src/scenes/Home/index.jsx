@@ -108,6 +108,7 @@ function Home() {
   <section>
     <Headers id='subHeading'  title="Somaiya BeliefSat - 0" size="10vh" />
     <AutoSlider />
+    <marquee behavior="smooth" id='scrollBar'  direction="x-axis">Students' developed satellite launched on 1st Jan 2024</marquee>
   </section>
 
 

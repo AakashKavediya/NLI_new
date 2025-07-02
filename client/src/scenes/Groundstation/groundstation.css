@@ -1,0 +1,10 @@
+#imageCopyright{
+    color: gray;
+    position: relative;
+    bottom: 0;
+    margin-top: -25px;
+    background-color: #00000046;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: 500;
+}

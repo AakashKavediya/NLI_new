@@ -5,7 +5,7 @@
   /* max-width: 1000px; */
   margin: auto;
   height: 65vh;
-  background-color: white;
+  background-color: transparent;
   padding: 20px;
   border-radius: 20px;
   display: flex;
@@ -34,8 +34,8 @@
 }
 
 #imageContainerLeft img {
-  min-width: 60vw;
-
+  min-width: 30vw;
+    max-height: 60vh;
   height: 60vh;
   border-radius: 10px;
 }

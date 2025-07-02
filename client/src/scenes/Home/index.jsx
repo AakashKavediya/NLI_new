@@ -254,8 +254,8 @@ function Home() {
                   <div className="test flex py-10 items-center justify-center">
                     <Cd
                       imageUrl={embedded}
-                      title="Embedded"
-                      description="Embedded domain involves designing computer systems for specific functions, integrating hardware and software for efficiency."
+                      title="System Design"
+                      description="System Design at NLL focuses on embedded systems and custom PCB design. We build, integrate, and test circuits and firmware for satellite subsystems and specialized electronic modules. The goal is reliable hardware that performs well in space and demanding real-world conditions."
                     />
                   </div>
                   <div className="test flex py-10 items-center justify-center">
@@ -280,16 +280,16 @@ function Home() {
                     <Cd
                       imageUrl={data}
                       title="Data Science"
-                      description="Data science involves extracting insights from data using statistical, mathematical, and computational techniques for informed decision-making."
+                      description="Data Science involves extracting insights from data using statistical, machine learning, deep learning, and NLP techniques to build intelligent systems and support data-driven decision-making."
                     />
                   </div>
-                  <div className="test flex py-10 items-center justify-center">
+                  {/* <div className="test flex py-10 items-center justify-center">
                     <Cd
                       imageUrl={pcb}
                       title="PCB Design"
                       description="PCB design involves creating circuit layouts on boards for electronic devices, optimizing connectivity and functionality."
                     />
-                  </div>
+                  </div> */}
                   <div className="test flex py-10 items-center justify-center">
                     <Cd
                       imageUrl={document}

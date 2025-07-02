@@ -3,7 +3,7 @@ import Button from "../../components/Button";
 import Navbar from "../../components/Navbar";
 import Projectscontent from "../../components/Projectscontent";
 import Footer from "../../components/Footer";
-
+import './projectStyles.css'
 function Projects({ projectsData, loading }) {
   const [selectedLabel, setSelectedLabel] = useState("BeliefSat-0");
 
@@ -51,7 +51,7 @@ function Projects({ projectsData, loading }) {
         </div>
 
         {/* Projects Content Section */}
-        <div className="results m-4">
+        <div id="projectImages" className="results m-4 ">
           {loading ? (
             <p className="text-lg md:text-xl text-center">Loading projects...</p>
           ) : (

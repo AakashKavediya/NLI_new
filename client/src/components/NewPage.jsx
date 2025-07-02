@@ -31,10 +31,10 @@ const NewPage = () => {
 />
 
         </div>
-        <div className="mainc pt-2 md:flex flex-row mt-10 pt-2 flex items-center justify-centermainc  items-center justify-center flex-row h-[65vh]">
-          <div className="leftmain justify-center items-center w-[100%] md: w-[50%]">
-            <div className="imgc w-[100%] overflow-hidden flex justify-center items-center md:w-[80%] flex justify-center items-center flex-col">
-              <img className="rounded-lg h-[50vh] " src={location.state.profile} alt="" srcset="" />
+        <div className="mainc pt-2 mt-10 flex items-center justify-center flex-row  [@media(max-width:800px)]:flex-col">
+          <div className="leftmain justify-center items-center w-[100%] md: w-[50%] [@media(max-width:800px)]:w-[100%] ">
+            <div className="imgc w-[100%] overflow-hidden flex justify-center items-center md:w-[80%] flex justify-center items-center flex-col [@media(max-width:800px)]:w-[100%] ">
+              <img className="rounded-lg h-[50vh] [@media(max-width:800px)]:w-[100%] [@media(max-width:800px)]:p-[10px] rounded-lg [@media(max-width:800px)]:rounded-[10px] " src={location.state.profile} alt="" srcset="" />
               <h2 className="mt-2 flex justify-center items-center text-3xl">
                 {location.state.fname} {location.state.lname}
               </h2>
@@ -44,17 +44,17 @@ const NewPage = () => {
           </div>
           <div className="righftmain  md:w-[50%]">
             <div className="details">
-              <ol className="md:flex  flex-row">
-                <li className="m-2 text-2xl">{location.state.Domain}</li>
+              <ol className="md:flex  flex-row [@media(max-width:800px)]:p-1">
+                <li className="m-2 text-2xl  ">{location.state.Domain}</li>
                 {/* <br /> */}
                 <li className="m-2 text-lg md:m-2 text-2xl">{location.state.email}</li>
               </ol>
             </div>
-            <div className="m-2 about">
+            <div className="m-2 about [@media(max-width:800px)]:p-1 [@media(max-width:800px)]:text-justify [@media(max-width:800px)]:p-1">
               <h2 className=" text-2xl font-bold ">About</h2>
               <span className="h-max">{location.state.About}</span>
             </div>
-            <div className="details">
+            <div className="details [@media(max-width:800px)]:p-1 ">
               <ol className="flex  flex-row">
                 <li className="m-2 text-2xl font-bold">KJSIT</li>
                 <li className="m-2 text-lg md:m-2 text-2xl">{location.state.College} Department</li>
@@ -62,10 +62,10 @@ const NewPage = () => {
             </div>
             
             <div className="projnames mt-2">
-              <ol className="flex  flex-row">
-                <li className="m-2 text-0.9xl font-bold md:text-1xl pt-2 pl-4 pr-4 md:m-2 rounded-[10px] bg-gray-500 text-white shadow-[0_0_10px_#ededed]">{location.state.project1}</li>
-                <li className="m-2 text-0.9xl font-bold md:text-1xl p-2 pl-4 pr-4 md:m-2 rounded-[10px] bg-gray-500 text-white shadow-[0_0_10px_#ededed]">{location.state.project2}</li>
-                <li className="m-2 text-0.9xl font-bold md:text-1xl p-2 pl-4 pr-4 md:m-2 rounded-[10px] bg-gray-500 text-white shadow-[0_0_10px_#ededed]">{location.state.project3}</li>
+              <ol className="flex  flex-row [@media(max-width:800px)]:flex-col">
+                <li className="m-2   text-0.9xl font-bold md:text-1xl pt-2 pl-4 pr-4 md:m-2 rounded-[10px] bg-gray-500 text-white shadow-[0_0_10px_#ededed] [@media(max-width:800px)]:text-0.4xl [@media(max-width:800px)]:w-[100%] [@media(max-width:800px)]:text-center p-2 ">{location.state.project1}</li>
+                <li className="m-2 text-0.9xl font-bold md:text-1xl p-2 pl-4 pr-4 md:m-2 rounded-[10px] bg-gray-500 text-white shadow-[0_0_10px_#ededed] [@media(max-width:800px)]:text-0.4xl [@media(max-width:800px)]:w-[100%] [@media(max-width:800px)]:text-center p-2 ">{location.state.project2}</li>
+                <li className="m-2 text-0.9xl font-bold md:text-1xl p-2 pl-4 pr-4 md:m-2 rounded-[10px] bg-gray-500 text-white shadow-[0_0_10px_#ededed] [@media(max-width:800px)]:text-0.4xl [@media(max-width:800px)]:w-[100%] [@media(max-width:800px)]:text-center p-2">{location.state.project3}</li>
 
               </ol>
             </div>

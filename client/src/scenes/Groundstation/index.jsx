@@ -9,7 +9,7 @@ import Footer from "../../components/Footer";
 import DataTable from "../../components/DataTable";
 import { day11, day21, day31 } from "../../helper/gsdata1";
 import { antennas, inverted, QFH } from "../../helper/gstypes";
-
+import './groundstation.css'
 function GroundStation() {
   const [selectedDay, setSelectedDay] = useState(1);
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
@@ -33,8 +33,10 @@ function GroundStation() {
                 alt="Ground Station"
               />
             </div>
-          </div>
 
+          </div>
+              <p id="imageCopyright" >Contact • PTK Lubuskie https://images.app.goo.gl/x41cYPgqBaU55reKA</p>
+    
           <div className="mt-6 text-2xl font-serif text-justify">
             The ground station is essential for satellite communication, serving as a hub for data acquisition, control, and payload transmission. It includes advanced antennas, receivers, and transmitters. The ground system comprises ground stations and control centers working together to support spacecraft and users. Transceivers in these stations are crucial for data transmission, telemetry, and command operations, ensuring reliable communication with satellites. Satellite tracking uses QFH, monopole, and Yagi-Uda antennas, with signal reception through SDRs or Baofengs and image reception using SDRs and decoding software.
           </div>

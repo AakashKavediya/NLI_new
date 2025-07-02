@@ -18,6 +18,10 @@ import Sahil from "../assets/Sahil.jpg";
 import Sheetal from "../assets/Sheetal.jpg";
 import Pranjal from "../assets/Pranjal.jpg";
 import Megh from "../assets/Megh Shah.jpg";
+import Amey from "../assets/AMEY NOOLKAR.jpg";
+import Shrutika from "../assets/SHRUTIKA BHOSLE.png";
+import Jatin from "../assets/Jatin Bhosale.jpg";
+import Manas from "../assets/Manas Sable.jpg";
 
 
 export const teams = [
@@ -25,7 +29,7 @@ export const teams = [
     fname: "Rohit",
     lname: "Yadav",
     yearleft: 0,
-    active: true,
+    active: false,
     project1: "Beliefsat-0",
     project2: "Crown-GS",
     project3: "na",
@@ -77,8 +81,8 @@ export const teams = [
     yearleft: 0,
     active: true,
     project1: "Beliefsat-0",
-    project2: "Beliefsat-1",
-    project3: "Crown-GS",
+    project2: "na",
+    project3: "na",
     domain: "Software",
     departmentclg: "Information Technology",
     about:
@@ -114,12 +118,14 @@ export const teams = [
     project3: "UASS",
     domain: "PCB Design",
     departmentclg: "EXTC",
-    about: "I am PCB domain Head of new leap labs",
+    about: "In December 2022, I started working at New Leaps Labs. I joined her at the new printed circuit board (PCB) labs at It and actively participated in the launch of Somaiya BeliefSat-0 as part of the PSLV-C58/XpoSat Mission (POEM-3). Additionally, I manage additional initiatives in these labs that are now underway.",
     linkedin:
       "https://www.linkedin.com/in/neeraj-patil-78220725a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "neeraj.rp@somaiya.edu",
     profile: Neeraj,
   },
+
+ 
   {
     fname: "Aditya",
     lname: "Kesarkar",
@@ -136,6 +142,25 @@ export const teams = [
     email: "kesarkar.a@somaiya.edu",
     profile: Neeraj,
   },
+
+   {
+    fname: "Manas",
+    lname: "Sable",
+    yearleft: 2021,
+    active: false,
+    project1: "Beliefsat-0",
+    project2: "Beliefsat-1",
+    project3: "UASS",
+    project4: "Somaiya-Pod",
+    domain: "Hardware",
+    departmentclg: "EXTC",
+    about: "I was the Chief Designer & Team Manager of New Leap Initiative, which was a flagship innovation hub at our institute working upon developing a student satellite, a groundstation and few other industrial projects. My major contribution were in Structural Design and PCB Design. Even though I am from EXTC, tackling Mechanical issues gave me a lot of experience and allowed me to accept new challenges. ",
+    linkedin:
+      "https://www.linkedin.com/in/manassable/",
+    email: "manas1999sable@gmail.com",
+    profile: Manas,
+  },
+  
   {
     fname: "Aryan",
     lname: "Ilake",
@@ -298,6 +323,42 @@ export const teams = [
     profile: Pavan,
   },
   {
+    fname: "Yash",
+    lname: "Mestry",
+    yearleft: 0,
+    active: true,
+    project1: "Beliefsat-0",
+    project2: "na",
+    project3: "na",
+    domain: "Hardware",
+    departmentclg: "EXTC",
+    about:
+      "As a PCB Designer at New Leap Labs, K. J. Somaiya Institute of Technology, I worked on the design and development of advanced avionics and payload interface systems for upcoming student satellite missions. My role involved schematic creation, multi-layer PCB layout, and hardware testing using Altium Designer, with an emphasis on creating compact, power-efficient boards suitable for space applications. I collaborated with interdisciplinary teams to ensure system-level integration, signal integrity, and compliance with stringent space-grade design and reliability standards. I was also responsible for generating fabrication-ready Gerber files, assisting in prototyping, and supporting validation and debugging of mission-critical electronics.",
+    linkedin:
+      "https://www.linkedin.com/in/yash-mestry-a9b213260/",
+    email: "mestry.y@somaiya.edu",
+    profile: Pavan,
+  },
+
+  {
+    fname: "Shrutika",
+    lname: "Bhosle",
+    yearleft: 0,
+    active: false,
+    project1: "Beliefsat-0",
+    project2: "na",
+    project3: "na",
+    domain: "Hardware",
+    departmentclg: "EXTC",
+    about:
+      "The most amazing part of college where you can actually explore and work on new things!",
+    linkedin:
+      "https://www.linkedin.com/in/shrutika-bhosle-774a191b0/",
+    email: "shrutikabhosle11@gmail.com",
+    profile: Shrutika,
+  },
+
+  {
     fname: "Dhriti",
     lname: "Kothari",
     yearleft: 0,
@@ -312,6 +373,39 @@ export const teams = [
     linkedin: "http://linkedin.com/in/dhriti-kothari-9b922525b",
     email: "dhriti.m@somaiya.edu",
     profile: Dhriti,
+  },
+   {
+    fname: "Maharshi",
+    lname: "Jethva",
+    yearleft: 0,
+    active: true,
+    project1: "Beliefsat-0",
+    project2: "na",
+    project3: "na",
+    domain: "Structure Design",
+    departmentclg: "Computer Engineering",
+    about:
+      "I am working on Structure Design focusing on CubeSat structural development and contributed to team efforts in designing 3D models for supporting satellite electronics and 3D models idea for making rigid cover for antenna's.Also I had made 2d drawing in AutoCAD for making PSLV C-58 rocket structure.Looking forward, I aim to deepen my engagement within the organization by taking on greater responsibilities and exploring opportunities that align with my technical interests.",
+    linkedin: "http://linkedin.com/in/dhriti-kothari-9b922525b",
+    email: "maharshi.j@somaiya.edu",
+    profile: Dhriti,
+  },
+
+  {
+    fname: "Amey",
+    lname: "Noolkar",
+    yearleft: 2019,
+    active: false,
+    project1: "Beliefsat-0",
+    project2: "na",
+    project3: "na",
+    domain: "Non Technical",
+    departmentclg: "Computer Engineering",
+    about:
+      "It all started with the mission design competition at ISRO which we won. A small team of aspiring minds made it to the top. This team would then go on to found NLL under the leadership of Rohit. I was offered the position of a mentor and I graduated soon enough, but I watched with pride as Beliefsat was launched into space.",
+    linkedin: "https://www.linkedin.com/in/amey-noolkar-17a988192/",
+    email: "amey.noolkar@somaiya.edu",
+    profile: Amey,
   },
   {
     fname: "Parshwa",
@@ -329,6 +423,25 @@ export const teams = [
     email: "parshwadama12@gmail.com",
     profile: Parshwa,
   },
+
+  {
+    fname: "Jatin",
+    lname: "Bhosale",
+    yearleft: 2022,
+    active: false,
+    project1: "Beliefsat-0",
+    project2: "Crown-GS",
+    project3: "UASS",
+    project4:"Beliefsat-1",
+    domain: "Hardware",
+    departmentclg: "EXTC",
+    about:
+      "Joined as part of the Satellite team. Later took on HAM team. Formed CROWN Club. Took over the UASS project when it got stuck in lockdown. Brought it back on track. Reformed the entire team when it fell apart during lockdown. Brought in a whole new batch of students, trained them, prepared code of conducts, SOPs, and created the team structure with much sophisticated positions including the Chairperson and Managing Committee. Took on the GS project (also my final year project). Never held any prominent position in the team. Resigned later due to disagreement with the management. ",
+    linkedin: "https://www.linkedin.com/in/jatin-bhosale-911845184",
+    email: "jatin.bhosale@somaiya.edu",
+    profile: Jatin,
+  },
+
   {
     fname: "Sahil",
     lname: "Mange",

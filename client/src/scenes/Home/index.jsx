@@ -224,7 +224,7 @@ function Home() {
                     <CardsDomain
                       imageUrl={data}
                       title="Data Science"
-                      description="Data science involves extracting insights from data using statistical, mathematical, and computational techniques for informed decision-making."
+                      description="Data Science involves extracting insights from data using statistical, machine learning, deep learning, and NLP techniques to build intelligent systems and support data-driven decision-making."
                     />
                     {/* <CardsDomain
                       imageUrl={pcb}

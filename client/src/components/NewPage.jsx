@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import Button from "./Button";
 import gs from "../assets/gs.jpg";
 import Navbar from "./Navbar";
-
+import Footer from "./Footer";
 const NewPage = () => {
   const goBack = () => {
     window.history.back();
@@ -15,14 +15,23 @@ const NewPage = () => {
       <Navbar bgcolor="#fafaf9" textColor="#000000" />
       <div className="h-max mb-10 px-5 md:px-10 xl:px-20 2xl:px-28 pt-[6rem] font-[poppins] ">
         <div className="top">
-          <Button
-            onClick={() => goBack()}
-            label="Back"
-            type="button"
-            isActive={true}
-          />
+       <Button
+  onClick={() => goBack()}
+  type="button"
+  className = "bg-white"
+  isActive={true}
+  label={
+    <span className="flex items-center bg-white gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" className="bg-white w-7 h-7" fill="black" viewBox="0 0 320 512">
+        <path d="M34.52 239l194.3-194.3c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L131.91 256l153.41 153.4c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L34.52 273c-9.37-9.4-9.37-24.6 0-34z" />
+      </svg>
+      
+    </span>
+  }
+/>
+
         </div>
-        <div className="mainc pt-2 md:flex flex-row">
+        <div className="mainc pt-2 md:flex flex-row mt-10 pt-2 flex items-center justify-centermainc  items-center justify-center flex-row h-[65vh]">
           <div className="leftmain justify-center items-center w-[100%] md: w-[50%]">
             <div className="imgc w-[100%] overflow-hidden flex justify-center items-center md:w-[80%] flex justify-center items-center flex-col">
               <img className="rounded-lg h-[50vh] " src={location.state.profile} alt="" srcset="" />
@@ -31,30 +40,7 @@ const NewPage = () => {
               </h2>
 
             </div>
-            <div className="projnames mt-10">
-              <ol className="flex  flex-row">
-                <li className="m-2 text-xl font-bold md:m-2 text-2xl">{location.state.project1}</li>
-                <li className="m-2 text-xl font-bold md:m-2 text-2xl">{location.state.project2}</li>
-                <li className="m-2 text-xl font-bold md:m-2 text-2xl">{location.state.project3}</li>
-
-              </ol>
-            </div>
-            <div className="link flex flex-row">
-              <button className="w-8 h-10 flex items-center justify-center ml-4 mt-2">
-                <a href={location.state.Linkedin} target="_blank" rel="noopener noreferrer">
-                  
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 19 18"
-                    className="w-6 h-6"
-                    fill="rgb(0, 0, 0)"
-                  >
-                    <path d="M3.94 2A2 2 0 1 1 2 0a2 2 0 0 1 1.94 2zM4 5.48H0V18h4zm6.32 0H6.34V18h3.94v-6.57c0-3.66 4.77-4 4.77 0V18H19v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
-                  </svg>
-                </a>
-              </button>
-
-            </div>
+          
           </div>
           <div className="righftmain  md:w-[50%]">
             <div className="details">
@@ -74,9 +60,38 @@ const NewPage = () => {
                 <li className="m-2 text-lg md:m-2 text-2xl">{location.state.College} Department</li>
               </ol>
             </div>
+            
+            <div className="projnames mt-2">
+              <ol className="flex  flex-row">
+                <li className="m-2 text-0.9xl font-bold md:text-1xl pt-2 pl-4 pr-4 md:m-2 rounded-[10px] bg-gray-500 text-white shadow-[0_0_10px_#ededed]">{location.state.project1}</li>
+                <li className="m-2 text-0.9xl font-bold md:text-1xl p-2 pl-4 pr-4 md:m-2 rounded-[10px] bg-gray-500 text-white shadow-[0_0_10px_#ededed]">{location.state.project2}</li>
+                <li className="m-2 text-0.9xl font-bold md:text-1xl p-2 pl-4 pr-4 md:m-2 rounded-[10px] bg-gray-500 text-white shadow-[0_0_10px_#ededed]">{location.state.project3}</li>
+
+              </ol>
+            </div>
+              <div className="link flex flex-row">
+              <button className="w-8 h-10 flex items-center justify-center ml-4 mt-2">
+                <a href={location.state.Linkedin} target="_blank" rel="noopener noreferrer">
+                  
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 19 18"
+                    className="w-6 h-6"
+                    fill="rgb(0, 0, 0)"
+                  >
+                    <path d="M3.94 2A2 2 0 1 1 2 0a2 2 0 0 1 1.94 2zM4 5.48H0V18h4zm6.32 0H6.34V18h3.94v-6.57c0-3.66 4.77-4 4.77 0V18H19v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
+                  </svg>
+                </a>
+              </button>
+
+            </div>
           </div>
         </div>
+        
       </div>
+      <div className=" border-t-[5px] border-t-[#ededed]" >
+        <Footer />
+        </div>
     </>
   );
 };

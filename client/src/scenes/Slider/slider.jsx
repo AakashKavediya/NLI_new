@@ -2,14 +2,26 @@ import React, { useEffect, useRef, useState } from 'react';
 // import './AutoSlider.css'; // For styling
 import './styles.css'
 const slidesData = [
+    {
+        image:'http://localhost:5173/src/assets/BeliefSat-0.jpg'
+    },
+    {
+        image:'http://localhost:5173/src/assets/BeliefSat-0%20Launch.jpg'
+    },
   {
-    image: 'http://localhost:5173/src/assets/BeliefSat-0%20Launch.jpg',
+    image: '/src/scenes/Slider/images/img1.jpeg',
   },
   {
-    image: 'https://i.pinimg.com/736x/3e/de/83/3ede83e937637f6726af04435191a322.jpg',
+    image: '/src/scenes/Slider/images/img2.jpeg',
   },
   {
-    image: 'https://i.pinimg.com/736x/3e/de/83/3ede83e937637f6726af04435191a322.jpg',
+    image: '/src/scenes/Slider/images/img3.jpeg',
+  },
+  {
+    image: '/src/scenes/Slider/images/img4.jpeg',
+  },
+  {
+    image: '/src/scenes/Slider/images/img5.jpeg',
   },
 ];
 
@@ -56,6 +68,8 @@ const AutoSlider = () => {
       <button id="next" onClick={nextSlide}>
         &#10095;
       </button>
+    
+
     </div>
   );
 };

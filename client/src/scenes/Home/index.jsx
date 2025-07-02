@@ -25,7 +25,7 @@ import data from "../../assets/data.jpg"
 import document from "../../assets/document.webp"
 import rohit from "../../assets/rohit.jpg"
 import supriya from "../../assets/supriya.jpg"
-
+import AutoSlider from '../../scenes/Slider/slider'
 import radio from "../../assets/radio.webp"
 import gsap from "gsap";
 import ScrollTrigger from "gsap/src/ScrollTrigger";
@@ -33,7 +33,7 @@ import Navbar from "../../components/Navbar";
 
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
-
+import './homeStyles.css'
 function Home() {
   const [navbg, setNavbg] = useState("#fafaf9");
   const [navtext, setNavtext] = useState("#000000");
@@ -105,11 +105,16 @@ function Home() {
     </div>
   </section>
 
+  <section>
+    <Headers id='subHeading'  title="Somaiya BeliefSat - 0" size="10vh" />
+    <AutoSlider />
+  </section>
+
 
 
 
           <section>
-  <Headers title="Projects" size="13vh" />
+  <Headers title="Projects" size="11vh" />
   <div className="mt-10 grid grid-cols-1 gap-16 gap-y-10 sm:grid-cols-1 md:grid-cols-12 font-serif">
     <div className="col-span-1 md:col-span-12">
       <div>
@@ -157,7 +162,7 @@ function Home() {
         </div>
       </div>
     </div>
-    <div className="col-span-1 sm:pt-5 md:col-span-5 md:pt-[100px]">
+    <div className="col-span-1 sm:pt-5 md:col-span-5 md:pt-16">
       <div>
         <Link to="/projects" className="block">
           <img
@@ -165,7 +170,9 @@ function Home() {
             src={avruti}
             alt="Avruti"
           />
+        <p id="copyRightText" >© Energy Tracker Asia</p>
         </Link>
+
       </div>
       <div className="mt-4 text-center md:text-left">
         <div className="flex justify-center md:justify-start space-x-2 mb-3">
@@ -184,7 +191,7 @@ function Home() {
 </section>
 
           <section className="pb-[80px]">
-            <Headers title="Domains" size="13vh" />
+            <Headers title="Domains" size="11vh" />
             {viewportWidth >= 768 ? (
               <div>
                 <div className="text-[#00000] ">
@@ -197,8 +204,8 @@ function Home() {
                     />
                     <CardsDomain
                       imageUrl={embedded}
-                      title="Embedded"
-                      description="Embedded domain involves designing computer systems for specific functions, integrating hardware and software for efficiency."
+                      title="System Design"
+                      description="System Design at NLL focuses on embedded systems and custom PCB design. We build, integrate, and test circuits and firmware for satellite subsystems and specialized electronic modules. The goal is reliable hardware that performs well in space and demanding real-world conditions."
                     />
                     <CardsDomain
                       imageUrl={radio}
@@ -219,11 +226,11 @@ function Home() {
                       title="Data Science"
                       description="Data science involves extracting insights from data using statistical, mathematical, and computational techniques for informed decision-making."
                     />
-                    <CardsDomain
+                    {/* <CardsDomain
                       imageUrl={pcb}
                       title="PCB Design"
                       description="PCB design involves creating circuit layouts on boards for electronic devices, optimizing connectivity and functionality."
-                    />
+                    /> */}
                     <CardsDomain
                       imageUrl={document}
                       title="Non-technical"

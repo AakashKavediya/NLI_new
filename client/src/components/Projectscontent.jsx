@@ -31,7 +31,7 @@ function Projectscontent({ label }) {
           </div>
 
           {/* Project Description */}
-          <div className="text m-2">
+          <div className="text m-2 mt-20">
             <p className="text-base md:text-2xl leading-6 md:leading-8 tracking-wide text-justify">
               {project.about || "No information available."}
             </p>

@@ -66,7 +66,7 @@ function GroundStation() {
                 ))}
               </div>
 
-              <div className="mt-16 grid grid-cols-1 gap-8">
+             <div className={`mt-16 grid gap-8 ${viewportWidth >= 768 ? 'grid-cols-2' : 'mt-90 grid-cols-1'}`}>
                 <div className="bg-white shadow-lg rounded-lg overflow-hidden">
                   <div className="title text-center text-4xl p-5 font-bold">
                     {QFH.title}
@@ -74,7 +74,7 @@ function GroundStation() {
                   <div className="flex justify-center p-4">
                     <img
                       className="rounded-lg "
-                      style={{ width: "90vh", maxHeight: "70vh" }}
+                      style={{ width: "90vh", maxHeight: "40vh" }}
                       src={QFH.image}
                       alt={QFH.title}
                     />

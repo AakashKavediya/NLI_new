@@ -1,0 +1,8 @@
+
+#iconContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    justify-content: space-between;
+    margin-top: 15px;
+}

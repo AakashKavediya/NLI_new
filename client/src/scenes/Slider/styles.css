@@ -1,0 +1,149 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  /* max-width: 1000px; */
+  margin: auto;
+  height: 65vh;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+#blockLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#imageContainerLeft img {
+  min-width: 60vw;
+
+  height: 60vh;
+  border-radius: 10px;
+}
+
+/* #contentContainerLeft {
+  margin-left: 20px;
+  max-width: 600px;
+} */
+
+button {
+  margin-top: 10px;
+}
+
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1111117e;
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  padding: 5px 20px;
+  border-radius: 40px;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+@media(max-width:800px){
+    .slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* max-width: 1000px; */
+  margin: auto;
+  height: 30vh;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+#blockLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#imageContainerLeft img {
+  min-width: 100vw;
+
+  height: 30vh;
+  border-radius: 10px;
+}
+
+/* #contentContainerLeft {
+  margin-left: 20px;
+  max-width: 600px;
+} */
+
+button {
+  margin-top: 10px;
+}
+
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1111117e;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  padding: 5px 10px;
+  border-radius: 40px;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+}

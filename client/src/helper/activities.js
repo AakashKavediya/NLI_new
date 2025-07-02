@@ -4,21 +4,15 @@ import fd2024 from "../assets/Field Day 2024.jpg";
 import fd from "../assets/FIELD DAY.jpg";
 import qrp from "../assets/QRP day.jpg";
 import wi from "../assets/Winter Internship on product engineering.jpg";
+import fd2025 from "../assets/arsi_2025.jpg";
 
 export const activities = [
   {
-    name: "Somaiya Space Conclave",
+    name: "ARSI National Field Day & Hill Topping Contest 2025",
     details:
-      "Organized the “Somaiya Space Conclave”, with an aim to promote industry-academia collaboration in the Space-Tech domain.",
-    date: "ON 28th FEB 2020",
-    image: spc,
-  },
-  {
-    name: "Field Day 2023",
-    details:
-      "The ARSI Hilltop Contest featured participation from Team VU2CWN of the CROWN club, who set up antennas on a hilltop and competed in Category A, covering HF bands 160, 80, 40, 20, 15, and 10 meters, attempting communication from the elevated location.",
-    date: "ON 25-26th FEB 2023",
-    image: fd2023,
+      "The Crown Club joined the ARSI National Field Day & Hill Topping Contest 2025, operating HF bands (40m, 20m, 15m) using CW, SSB, Digital, and QRP modes with improved power stability via a DC-DC boost converter.Key highlights included satellite tracking of NOAA, ISS, and LEO satellites using QFH and Yagi antennas, and a Republic Day Flag Hoisting Ceremony. The event strengthened technical skills, expanded contacts, and pinpointed improvements in VHF/UHF communication for future growth.",
+    date: "ON 25-26th JAN 2025",
+    image: fd2025,
   },
   {
     name: "Field Day 2024",
@@ -35,6 +29,13 @@ export const activities = [
     image: qrp,
   },
   {
+    name: "Field Day 2023",
+    details:
+      "The ARSI Hilltop Contest featured participation from Team VU2CWN of the CROWN club, who set up antennas on a hilltop and competed in Category A, covering HF bands 160, 80, 40, 20, 15, and 10 meters, attempting communication from the elevated location.",
+    date: "ON 25-26th FEB 2023",
+    image: fd2023,
+  },
+  {
     name: "FIELD DAY",
     details:
       " Team VU2CWN of the CROWN club, under the direction of Dr. Umesh Shinde VU3CDI and C.S. Kulkarni Sir VU2CHD, participated in the ARSI Hilltop Contest. The team set up antennas on a hilltop and competed in Category A, covering HF bands 160, 80, 40, 20, 15, and 10 meters, trying to communicate from the higher location. With an emphasis on HF bands, antenna theory, and problem-solving under real-world circumstances, the event offered invaluable practical experience in radio communications.",
@@ -48,4 +49,11 @@ export const activities = [
     date: "DEC 2020",
     image: wi,
   },
+  {
+    name: "Somaiya Space Conclave",
+    details:
+      "Organized the “Somaiya Space Conclave”, with an aim to promote industry-academia collaboration in the Space-Tech domain.",
+    date: "ON 28th FEB 2020",
+    image: spc,
+  }
 ];

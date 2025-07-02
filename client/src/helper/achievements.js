@@ -3,7 +3,8 @@ import jovianMoonContest from '../assets/jovianMoonContest.jpg';
 import antennaMakingContest from '../assets/antennaMakingContest.jpg'; 
 import utrr from '../assets/utrr.jpg'; 
 import productDemo from '../assets/productDemo.jpg';  
-import anveshan from '../assets/anveshan.jpg'; 
+import anveshan from '../assets/anveshan.jpg';
+import sstv from '../assets/SSTV_img_certificate.png';
 
 export const achievements = [
     {
@@ -13,10 +14,10 @@ export const achievements = [
         image: beliefSat
     },
     {
-        name: "Touch The Jovian Moon Contest",
-        details: "Winners of “Touch The Jovian Moon Contest” organized by LPSC-ISRO.",
-        date: "DEC 2017 TO MAY 2018",
-        image: jovianMoonContest
+        name: "Anveshan",
+        details: "Secured 3rd Prize at “ANVESHAN: National Student Research Convention” held at AMET, Chennai organized by AIU.",
+        date: "ON 27th MAR 2022",
+        image: anveshan
     },
     {
         name: "Antenna Making Contest",
@@ -25,21 +26,28 @@ export const achievements = [
         image: antennaMakingContest
     },
     {
-        name: "UTRR",
-        details: "Participated in UTRR (User Trial Readiness Review) for the development of Radiosonde.",
-        date: "IN 2019",
-        image: utrr
-    },
-    {
         name: "Product demonstration and tender evaluation",
         details: "Participated in “Product demonstration and tender evaluation” held at Mausam Vibhag, Delhi announced by the Indian Meteorological Department.",
         date: "IN DEC 2020",
         image: productDemo
     },
     {
-        name: "Anveshan",
-        details: "Secured 3rd Prize at “ANVESHAN: National Student Research Convention” held at AMET, Chennai organized by AIU.",
-        date: "ON 27th MAR 2022",
-        image: anveshan
+        name: "ARISS SSTV Award – NA1913",
+        details: "Awarded to Umesh Shinde (VU3CDI) for receiving SSTV images from the International Space Station, commemorating NASA On The Air and the 35th anniversary of Amateur Radio on Human Spaceflight Missions. This achievement celebrates the use of amateur radio aboard the ISS to engage and inspire global radio enthusiasts.",
+        date: "15-17 FEB 2019",
+        image: sstv
+    },
+    {
+        name: "UTRR",
+        details: "Participated in UTRR (User Trial Readiness Review) for the development of Radiosonde.",
+        date: "IN 2019",
+        image: utrr
+    },
+    {
+        name: "Touch The Jovian Moon Contest",
+        details: "Winners of “Touch The Jovian Moon Contest” organized by LPSC-ISRO.",
+        date: "DEC 2017 TO MAY 2018",
+        image: jovianMoonContest
     }
+    
 ];

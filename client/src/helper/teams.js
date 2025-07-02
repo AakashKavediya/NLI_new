@@ -5,7 +5,6 @@ import Vivek from "../assets/Vivek.jpg";
 import Neeraj from "../assets/Neeraj.jpg";
 import Aryan from "../assets/Aryan.jpg";
 import Pratik from "../assets/Pratik.jpg";
-import Pranav from "../assets/Pranav.jpg";
 import Chaitanya from "../assets/Chaitanya.jpg";
 import Hitanshu from "../assets/Hitanshu.jpg";
 import RohitKhandekar from "../assets/RohitKhandekar.jpg";
@@ -18,8 +17,8 @@ import Parshwa from "../assets/Parshwa.jpg";
 import Sahil from "../assets/Sahil.jpg";
 import Sheetal from "../assets/Sheetal.jpg";
 import Pranjal from "../assets/Pranjal.jpg";
-import Aditya from "../assets/Aditya.jpg";
-import Taher from "../assets/Taher.jpg";
+import Megh from "../assets/Megh Shah.jpg";
+
 
 export const teams = [
   {
@@ -38,6 +37,23 @@ export const teams = [
       "https://www.linkedin.com/in/rohit-yadav-3253b9239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "rohit15@somaiya.edu",
     profile: Rohit,
+  },
+  {
+    fname: "Megh",
+    lname: "Shah",
+    yearleft: 0,
+    active: true,
+    project1: "Beliefsat-0",
+    project2: "na",
+    project3: "na",
+    domain: "Embedded",
+    departmentclg: "Information technology",
+    about:
+      "I’m an Information Technology student with a strong interest in embedded systems and low-level programming. I enjoy working with microcontrollers, real-time operating systems, and communication protocols like SPI, I2C, and CAN. Skilled in C programming, I like building efficient and reliable firmware for hardware-driven applications. ",
+    linkedin:
+      "https://www.linkedin.com/in/megh-shah-a8aa112a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "megh.ks@somaiya.edu",
+    profile: Megh,
   },
   {
     fname: "Parth",
@@ -105,14 +121,30 @@ export const teams = [
     profile: Neeraj,
   },
   {
+    fname: "Aditya",
+    lname: "Kesarkar",
+    yearleft: 0,
+    active: true,
+    project1: "Beliefsat-0",
+    project2: "na",
+    project3: "na",
+    domain: "PCB Design",
+    departmentclg: "EXTC",
+    about: "During my time at NLL, I gained hands-on experience in PCB design, hardware implementation, and system integration. I worked on space-related projects like BeliefSat-0 and am currently contributing to BeliefSat-1U, where I was actively involved in designing and fabricating PCBs and assembling hardware for on-board systems.This journey gave me the opportunity to closely interact with industry professionals and learn from the mentorship of experienced seniors. I also had the privilege of participating in the IN-SPACe Immersion Program in Ahmedabad, which offered valuable insights into India’s growing private space ecosystem. Additionally, attending international conferences on space technology and sustainable development helped broaden my perspective on global trends, challenges, and innovation in the space domain.Overall, the experience at NLL has helped me grow both technically and professionally, and it has inspired me to continue exploring the intersection of electronics and space systems.",
+    linkedin:
+      "https://www.linkedin.com/in/aditya-kesarkar-7aa3b6291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "kesarkar.a@somaiya.edu",
+    profile: Neeraj,
+  },
+  {
     fname: "Aryan",
     lname: "Ilake",
     yearleft: 0,
     active: true,
     project1: "Beliefsat-0",
-    project2: "Crown-GS",
+    project2: "na",
     project3: "na",
-    domain: "Software",
+    domain: "Data Science",
     departmentclg: "AI-DS",
     about:
       "My experience is pretty good while working with other team members in NLL. Have learned many things after joining NLL.",
@@ -156,7 +188,7 @@ export const teams = [
     fname: "Chaitanya",
     lname: "Kasambe",
     yearleft: 2020,
-    active: true,
+    active: false,
     project1: "Beliefsat-1",
     project2: "UASS",
     project3: "Beliefsat-0",
@@ -188,7 +220,7 @@ export const teams = [
     fname: "Rohit",
     lname: "Khandekar",
     yearleft: 2020,
-    active: true,
+    active: false,
     project1: "UASS",
     project2: "na",
     project3: "na",
@@ -220,7 +252,7 @@ export const teams = [
     fname: "Akshay",
     lname: "Jain",
     yearleft: 2020,
-    active: true,
+    active: false,
     project1: "Beliefsat-0",
     project2: "na",
     project3: "na",
@@ -252,7 +284,7 @@ export const teams = [
     fname: "Pavan",
     lname: "Jangam",
     yearleft: 2023,
-    active: true,
+    active: false,
     project1: "UASS",
     project2: "Crown-GS",
     project3: "Beliefsat-0",
@@ -269,11 +301,11 @@ export const teams = [
     fname: "Dhriti",
     lname: "Kothari",
     yearleft: 0,
-    active: true,
+    active: false,
     project1: "UASS",
     project2: "na",
     project3: "na",
-    domain: "Embedded",
+    domain: "Data Science",
     departmentclg: "Computer Engineering",
     about:
       "In a short span of time of having joined NLL, I have learned so many different things and tried my hands on many new things. NLL gives me an opportunity to explore new fields of my interest.",
@@ -303,9 +335,9 @@ export const teams = [
     yearleft: 0,
     active: true,
     project1: "UASS",
-    project2: "Crown-GS",
-    project3: "Beliefsat-0",
-    domain: "Embedded",
+    project2: "Beliefsat-0",
+    project3: "na",
+    domain: "Software",
     departmentclg: "Information technology",
     about:
       "I am Sahil Mange, studying second year engineering at KJSIT. I joined NLL on the first day and have learned much about IOT and embedded systems. NLL gives me the opportunity to explore my interest in space technologies.",
@@ -346,34 +378,5 @@ export const teams = [
     email: "pranjal.sancheti@somaiya.edu",
     profile: Pranjal,
   },
-  {
-    fname: "Aditya",
-    lname: "Singh",
-    yearleft: 0,
-    active: true,
-    project1: "Beliefsat-0",
-    project2: "Crown-GS",
-    project3: "na",
-    domain: "Embedded",
-    departmentclg: "EXTC",
-    about: "",
-    linkedin: "",
-    email: "ass28@somaiya.edu",
-    profile: Aditya,
-  },
-  {
-    fname: "Taher",
-    lname: "Stovewala",
-    yearleft: 0,
-    active: false,
-    project1: "Beliefsat-0",
-    project2: "na",
-    project3: "na",
-    domain: "Embedded",
-    departmentclg: "EXTC",
-    about: "",
-    linkedin: "https://www.linkedin.com/in/taher-stovewala-104304307/",
-    email: "taher.s@somaiya.edu",
-    profile: Taher,
-  },
+
 ];

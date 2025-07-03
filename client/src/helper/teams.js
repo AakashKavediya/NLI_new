@@ -26,6 +26,8 @@ import Maharshi from "../assets/Maharshi.jpg";
 import YashM from "../assets/YashM.jpg";
 import Aarya from "../assets/Aarya Gojare.jpg";
 import Shreya from "../assets/ShreyaP.jpg";
+import Trushali from "../assets/Trushali Phatak.jpeg";
+import Adtiya from "../assets/avatar3.png";
 
 
 
@@ -81,6 +83,23 @@ export const teams = [
     profile: Parth,
   },
   {
+    fname: "Trushali",
+    lname: "Phatak",
+    yearleft: 0,
+    active: true,
+    project1: "Crown-GS",
+    project2: "na",
+    project3: "na",
+    domain: "Radio Frequency",
+    departmentclg: "Information Technology",
+    about:
+      "My experience at New Leap Labs has been fueled by a deep enthusiasm for communication systems and experiential learning. I have played a role in the design and functioning of our satellite ground station, where I engaged with antennas, RF chains, and signal tracking instruments. As a licensed amateur radio operator, I have also delved into real-time communication and data reception, acquiring essential practical knowledge in wireless and satellite technologies.",
+    linkedin: "https://www.linkedin.com/in/trushali-phatak-9980b8373/",
+    email: "trushali.phatak@somaiya.edu",
+    profile: Trushali,
+  },
+
+   {
     fname: "Ankur",
     lname: "Chheda",
     yearleft: 0,
@@ -145,7 +164,7 @@ export const teams = [
     linkedin:
       "https://www.linkedin.com/in/aditya-kesarkar-7aa3b6291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "kesarkar.a@somaiya.edu",
-    profile: Neeraj,
+    profile: Adtiya,
   },
 
    {
@@ -182,22 +201,7 @@ export const teams = [
     profile: Shreya,
   },
   
-  {
-    fname: "Aryan",
-    lname: "Ilake",
-    yearleft: 0,
-    active: true,
-    project1: "Beliefsat-0",
-    project2: "na",
-    project3: "na",
-    domain: "Data Science",
-    departmentclg: "AI-DS",
-    about:
-      "My experience is pretty good while working with other team members in NLL. Have learned many things after joining NLL.",
-    linkedin: "https://www.linkedin.com/in/aryan-ilake-04bb042a6/",
-    email: "aryan.ilake@somaiya.edu",
-    profile: Aryan,
-  },
+  
 {
     fname: "Aarya",
     lname: "Gojare",
@@ -213,6 +217,23 @@ export const teams = [
     linkedin: "https://www.linkedin.com/in/aarya-gojare-56850928a/",
     email: "aarya.gojare@somaiya.edu",
     profile: Aarya,
+  },
+
+  {
+    fname: "Aryan",
+    lname: "Ilake",
+    yearleft: 0,
+    active: true,
+    project1: "Beliefsat-0",
+    project2: "na",
+    project3: "na",
+    domain: "Data Science",
+    departmentclg: "AI-DS",
+    about:
+      "My experience is pretty good while working with other team members in NLL. Have learned many things after joining NLL.",
+    linkedin: "https://www.linkedin.com/in/aryan-ilake-04bb042a6/",
+    email: "aryan.ilake@somaiya.edu",
+    profile: Aryan,
   },
   {
     fname: "Pratik",

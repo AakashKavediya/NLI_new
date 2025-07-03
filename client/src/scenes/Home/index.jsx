@@ -108,7 +108,7 @@ function Home() {
   <section>
     <Headers id='subHeading'  title="Somaiya BeliefSat - 0" size="10vh" />
     <AutoSlider />
-    <marquee behavior="smooth" id='scrollBar'  direction="x-axis">Students' developed satellite launched on 1st Jan 2024</marquee>
+    <marquee behavior="smooth" id='scrollBar'  direction="x-axis">New Leap Labs Students' developed satellite launched on 1st Jan 2024</marquee>
   </section>
 
 
@@ -245,7 +245,7 @@ function Home() {
               <div>
                 <div className="">
                   {/* First Row */}
-                  <div className="test flex py-15 items-center justify-center">
+                  <div className="test flex py-10 items-center justify-center">
                     <Cd
                       imageUrl={software}
                       title="Software"

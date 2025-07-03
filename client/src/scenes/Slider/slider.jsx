@@ -10,46 +10,46 @@ const slidesData = [
     },
     
   {
-    image: '/src/scenes/Slider/images/img1.jpeg',
+    image: './src/scenes/Slider/images/img1.jpeg',
   },
   {
-    image: '/src/scenes/Slider/images/img2.jpeg',
+    image: './src/scenes/Slider/images/img2.jpeg',
   },
   {
-    image: '/src/scenes/Slider/images/testing.jpg',
+    image: './src/scenes/Slider/images/testing.jpg',
   },
   {
-    image: '/src/scenes/Slider/images/img3.jpeg',
+    image: './src/scenes/Slider/images/img3.jpeg',
   },
   {
-    image: '/src/scenes/Slider/images/shindesir.jpg',
+    image: './src/scenes/Slider/images/shindesir.jpg',
   },
   {
-    image: '/src/scenes/Slider/images/img4.jpeg',
+    image: './src/scenes/Slider/images/img4.jpeg',
   },
   {
-    image: '/src/scenes/Slider/images/img5.jpeg',
+    image: './src/scenes/Slider/images/img5.jpeg',
   },
   {
-    image: '/src/scenes/Slider/images/launchpic1.jpg',
+    image: './src/scenes/Slider/images/launchpic1.jpg',
   },
   {
-    image: '/src/scenes/Slider/images/launchpic2.jpg',
+    image: './src/scenes/Slider/images/launchpic2.jpg',
   },
   {
-    image: '/src/scenes/Slider/images/launchpic3.jpg',
+    image: './src/scenes/Slider/images/launchpic3.jpg',
   },
   {
-    image: '/src/scenes/Slider/images/launchpic4.jpg',
+    image: './src/scenes/Slider/images/launchpic4.jpg',
   },
   {
-    image: '/src/scenes/Slider/images/launchpic5.jpg',
+    image: './src/scenes/Slider/images/launchpic5.jpg',
   },
   {
-    image: '/src/scenes/Slider/images/launchpic6.jpg',
+    image: './src/scenes/Slider/images/launchpic6.jpg',
   },
   {
-    image: '/src/scenes/Slider/images/launchpic7.jpg',
+    image: './src/scenes/Slider/images/launchpic7.jpg',
   },
 ];
 

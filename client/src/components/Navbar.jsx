@@ -16,7 +16,7 @@ const Navbar = ({ bgcolor, textColor, active }) => {
 
   console.log(active)
   return (
-    <div className="w-[45vh] mr-0 ml-0 md:w-full z-20 fixed top-0 left-0 right-0 font-poppins flex justify-between items-center h-20  mx-auto px-6 " style={{ backgroundColor: bgcolor, color: textColor, transition: "0.3 ease-in-out" }}>
+    <div className=" mr-0 ml-0 md:w-full z-20 fixed top-0 left-0 right-0 font-poppins flex justify-between items-center h-20  mx-auto px-6 " style={{ backgroundColor: bgcolor, color: textColor, transition: "0.3 ease-in-out" }}>
       <div className="flex  justify-between items-center">
         <img src={logo} className="h-12 w-auto rounded-full border border-black"></img>
         <div className="p-2 text-2xl font-bold font-serif">New Leap Labs</div>

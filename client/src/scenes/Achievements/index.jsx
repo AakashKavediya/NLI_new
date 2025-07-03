@@ -163,7 +163,7 @@ const Achievements = ({ loading }) => {
                     <div className="flex items-center justify-center md:w-1/2">
                       <div className="flex flex-col items-center justify-center text-justify">
                         <div>{item.details}</div>
-                        <div className="mt-4">{item.date}</div>
+                        <div className="mt-4 font-bold">{item.date}</div>
                       </div>
                     </div>
                   </>
@@ -175,7 +175,7 @@ const Achievements = ({ loading }) => {
                   <div className="flex items-center justify-center md:w-1/2">
                     <div className="m-2 flex flex-col items-center justify-center text-justify">
                       <div>{item.details}</div>
-                      <div className="mt-4">{item.date}</div>
+                      <div className="mt-4 font-bold">{item.date}</div>
                     </div>
                   </div>
                 </>

@@ -97,7 +97,7 @@ const Activities = ({ activitiesData, eventsData, loading }) => {
                                             <img className="h-80 w-[550px] rounded-2xl shadow-lg" src={item.image} alt="Event" />
                                         </div>
                                         <div className="flex items-center justify-center md:w-1/2">
-                                            <div className="flex flex-col items-center justify-center text-justify">
+                                            <div className="flex flex-col items-center justify-center text-justify padding-4">
                                                 <div className="font-bold text-3xl">{item.name}</div>
                                                 <div>{item.details}</div>
                                                 <div className="mt-4 font-bold">{item.date}</div>

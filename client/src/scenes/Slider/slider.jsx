@@ -8,11 +8,13 @@ const slidesData = [
   { video: 'https://www.youtube.com/embed/3Swjlq9hlrM' }, // 👈 YouTube video
   { image: './src/scenes/Slider/images/img1.jpeg' },
   { image: './src/scenes/Slider/images/img2.jpeg' },
+  { video: 'https://www.youtube.com/embed/CT-K4qLuNTo' }, // 👈 YouTube video
   { image: './src/scenes/Slider/images/testing.jpg' },
   { image: './src/scenes/Slider/images/img3.jpeg' },
   { image: './src/scenes/Slider/images/shindesir.jpg' },
   { image: './src/scenes/Slider/images/img4.jpeg' },
   { image: './src/scenes/Slider/images/img5.jpeg' },
+  { video: 'https://www.youtube.com/embed/0WILY1JaI8I' }, // 👈 YouTube video
   { image: './src/scenes/Slider/images/launchpic1.jpg' },
   { image: './src/scenes/Slider/images/launchpic2.jpg' },
   { image: './src/scenes/Slider/images/launchpic3.jpg' },

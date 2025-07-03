@@ -17,7 +17,7 @@ function Teams() {
       <div className="py-20 font-poppins justify-between items-center h-max mx-auto px-5 mt-5">
         
         {/* Buttons Container - Responsive Grid */}
-        <div className="grid grid-cols-2 gap-4 md:flex md:space-x-4">
+        <div className="grid grid-cols-3 gap-2 md:flex md:space-x-2">
           <Button
             onClick={() => handleButtonClick("Beliefsat-0")}
             label="BeliefSat-0"
@@ -50,7 +50,7 @@ function Teams() {
           />
           <Button
             onClick={() => handleButtonClick("Crown-GS")}
-            label="Groundstation"
+            label="Crown-GS"
             type="button"
             isActive={selectedLabel === "Crown-GS"}
           />

@@ -22,6 +22,11 @@ import Amey from "../assets/AMEY NOOLKAR.jpg";
 import Shrutika from "../assets/SHRUTIKA BHOSLE.png";
 import Jatin from "../assets/Jatin Bhosale.jpg";
 import Manas from "../assets/Manas Sable.jpg";
+import Maharshi from "../assets/Maharshi.jpg";
+import YashM from "../assets/YashM.jpg";
+import Aarya from "../assets/Aarya Gojare.jpg";
+import Shreya from "../assets/ShreyaP.jpg";
+
 
 
 export const teams = [
@@ -160,6 +165,22 @@ export const teams = [
     email: "manas1999sable@gmail.com",
     profile: Manas,
   },
+  {
+    fname: "Shreya",
+    lname: "Patil",
+    yearleft: 0,
+    active: true,
+    project1: "Beliefsat-0",
+    project2: "na",
+    project3: "na",
+    domain: "Embedded",
+    departmentclg: "AI-DS",
+    about:
+      "Since my first year, I’ve been part of New Leap Labs, where I focus on embedded systems and hardware prototyping. I've worked extensively with microcontrollers, sensors, and communication protocols like APRS. NLL gave me hands-on experience in debugging, interfacing, and writing low-level firmware. It’s where I built my core skills in embedded systems through real-world, team-driven projects.",
+    linkedin: "https://www.linkedin.com/in/shreya-patil-2a1321296",
+    email: "shreya25@somaiya.edu",
+    profile: Shreya,
+  },
   
   {
     fname: "Aryan",
@@ -176,6 +197,22 @@ export const teams = [
     linkedin: "https://www.linkedin.com/in/aryan-ilake-04bb042a6/",
     email: "aryan.ilake@somaiya.edu",
     profile: Aryan,
+  },
+{
+    fname: "Aarya",
+    lname: "Gojare",
+    yearleft: 0,
+    active: true,
+    project1: "Beliefsat-0",
+    project2: "na",
+    project3: "na",
+    domain: "Embedded",
+    departmentclg: "Computer Engineering",
+    about:
+      "At NLL, I’ve worked on the firmware, testing digipeater and TM/TC systems on BeliefSat-0.1. I’ve learned how to design and validate communication protocols for space-grade systems. Along the way, I’ve built strong friendships and developed a great bond with my seniors, who’ve guided me throughout the journey.",
+    linkedin: "https://www.linkedin.com/in/aarya-gojare-56850928a/",
+    email: "aarya.gojare@somaiya.edu",
+    profile: Aarya,
   },
   {
     fname: "Pratik",
@@ -337,7 +374,7 @@ export const teams = [
     linkedin:
       "https://www.linkedin.com/in/yash-mestry-a9b213260/",
     email: "mestry.y@somaiya.edu",
-    profile: Pavan,
+    profile: YashM,
   },
 
   {
@@ -388,8 +425,10 @@ export const teams = [
       "I am working on Structure Design focusing on CubeSat structural development and contributed to team efforts in designing 3D models for supporting satellite electronics and 3D models idea for making rigid cover for antenna's.Also I had made 2d drawing in AutoCAD for making PSLV C-58 rocket structure.Looking forward, I aim to deepen my engagement within the organization by taking on greater responsibilities and exploring opportunities that align with my technical interests.",
     linkedin: "http://linkedin.com/in/dhriti-kothari-9b922525b",
     email: "maharshi.j@somaiya.edu",
-    profile: Dhriti,
+    profile: Maharshi,
   },
+
+  
 
   {
     fname: "Amey",

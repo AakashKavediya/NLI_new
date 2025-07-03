@@ -1,9 +1,15 @@
 import cqMumbai from '../assets/CQ Mumbai.jpg';  
 import vaani from '../assets/VAANI.jpg';       
-import arsiMeet from '../assets/ARSI Regional Meet.jpg';  
+import arsiMeet from '../assets/ARSI Regional Meet.jpg';
+import  Wconclave from '../assets/Weather_conclave.jpg';
 
 export const events = [
-    
+    {
+        name: "Weather Conclave 2025",
+        details: "Held on April 8, 2025, at K. J. Somaiya Institute of Technology, the Weather Conclave brought together domain experts, industry leaders, and academia for thematic briefings and dialogues on weather-tech innovation. A keynote by Shri K. S. Hosalikar, Former Head & Scientist ‘G’, IMD Pune, was followed by a felicitation honoring his contributions to meteorology and society. The event featured discussions on weather forecasting, climate change, and the role of technology in weather prediction, fostering collaboration between academia and industry.",
+        date: "8th APRIL 2025",
+        image: Wconclave
+    },
     {
         name: "VAANI",
         details: "A three-day All India Technical Education Conference (AICTE) on 'Self-reliant India: Indigenous Technology Development in Space and Defense' was organized by K. J. Somaiya Institute of Technology, Mumbai. The workshop, part of the AICTE-VAANI initiative, aimed to bring together experts, researchers, and students to discuss the importance of self-reliance and indigenous development in technology.",

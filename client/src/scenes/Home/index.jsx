@@ -77,12 +77,12 @@ function Home() {
   initial={{ scale: 2, opacity: 0 }}
   animate={{ scale: 1, opacity: 1 }}
   transition={{ duration: 2 }}
-  className="intro absolute mx-auto w-[70%] sm:w-[60%] md:w-[85%] h-[60%] sm:h-[75%] flex justify-center items-center overflow-hidden"
+  className="intro absolute mx-auto w-[70%] sm:w-[60%] md:w-[85%] h-[70%] sm:h-[75%] flex justify-center items-center overflow-hidden"
 >
   <motion.img
     src={space}
     alt=""
-    className="w-full md:h-[100vh] rounded-md opacity-100"
+    className="w-full md:h-[120vh] rounded-md opacity-120"
     style={{
       objectPosition: "top", // Ensures cropping happens from the top
     }}
@@ -245,7 +245,7 @@ function Home() {
               <div>
                 <div className="">
                   {/* First Row */}
-                  <div className="test flex py-10 items-center justify-center">
+                  <div className="test flex py-15 items-center justify-center">
                     <Cd
                       imageUrl={software}
                       title="Software"

@@ -14,10 +14,9 @@ function Projects({ projectsData, loading }) {
   return (
     <>
       <Navbar bgcolor="#fafaf9" textColor="#000000" active={"projects"} />
-      <div className="py-20 justify-between items-center h-max mx-auto px-5 mt-5 mb-9">
-
+      <div className="py-20 justify-between items-center h-max mx-auto px-5 mt-5 mb-5 font-poppins">
         {/* Responsive Button Grid */}
-        <div className="grid grid-cols-2 gap-4 md:flex md:space-x-4">
+        <div className="grid grid-cols-3 gap-2 md:flex md:space-x-2">
           <Button
             onClick={() => handleButtonClick("BeliefSat-0")}
             label="BeliefSat-0"

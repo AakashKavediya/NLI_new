@@ -10,14 +10,14 @@ function CardsDomain({ imageUrl, title, description }) {
     <div>
       <FlippingCard>
         <FlippingCardBack>
-          <div className="bg-[#FFFFF] max-w-2xl h-[40vh] rounded-3xl overflow-hidden shadow shadow-slate-500 border border-black">
+          <div className="bg-[#FFFFF] max-w-2xl h-[45vh] rounded-3xl overflow-hidden shadow shadow-slate-500 border border-black">
             <div className="px-6 py-4">
               <p className="text-[#00000] text-0.8xl mb-2">{description}</p>
             </div>
           </div>
         </FlippingCardBack>
         <FlippingCardFront>
-          <div className="max-w-2xl h-[40vh] rounded-3xl overflow-hidden shadow shadow-slate-500 border border-black">
+          <div className="max-w-2xl h-[45vh] rounded-3xl overflow-hidden shadow shadow-slate-500 border border-black">
             <img className="w-full" src={imageUrl} alt={title} />
             <div className="px-6 py-4">
               <div className="font-bold text-2xl text-center mb-2">{title}</div>

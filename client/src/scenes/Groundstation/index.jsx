@@ -32,6 +32,7 @@ function GroundStation() {
                 className="w-[160vh] h-[60vh] transform hover:scale-110 transition-transform duration-300 ease-in-out"
                 alt="Ground Station"
               />
+             
             </div>
 
           </div>

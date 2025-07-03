@@ -2,12 +2,13 @@ import React, { useEffect, useRef, useState } from 'react';
 // import './AutoSlider.css'; // For styling
 import './styles.css'
 const slidesData = [
+  {
+        image:'http://localhost:5173/src/assets/BeliefSat-0%20Launch.jpg'
+    },
     {
         image:'http://localhost:5173/src/assets/BeliefSat-0.jpg'
     },
-    {
-        image:'http://localhost:5173/src/assets/BeliefSat-0%20Launch.jpg'
-    },
+    
   {
     image: '/src/scenes/Slider/images/img1.jpeg',
   },
@@ -15,13 +16,40 @@ const slidesData = [
     image: '/src/scenes/Slider/images/img2.jpeg',
   },
   {
+    image: '/src/scenes/Slider/images/testing.jpg',
+  },
+  {
     image: '/src/scenes/Slider/images/img3.jpeg',
+  },
+  {
+    image: '/src/scenes/Slider/images/shindesir.jpg',
   },
   {
     image: '/src/scenes/Slider/images/img4.jpeg',
   },
   {
     image: '/src/scenes/Slider/images/img5.jpeg',
+  },
+  {
+    image: '/src/scenes/Slider/images/launchpic1.jpg',
+  },
+  {
+    image: '/src/scenes/Slider/images/launchpic2.jpg',
+  },
+  {
+    image: '/src/scenes/Slider/images/launchpic3.jpg',
+  },
+  {
+    image: '/src/scenes/Slider/images/launchpic4.jpg',
+  },
+  {
+    image: '/src/scenes/Slider/images/launchpic5.jpg',
+  },
+  {
+    image: '/src/scenes/Slider/images/launchpic6.jpg',
+  },
+  {
+    image: '/src/scenes/Slider/images/launchpic7.jpg',
   },
 ];
 

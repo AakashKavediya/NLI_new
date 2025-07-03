@@ -14,7 +14,7 @@ const Navbar = ({ bgcolor, textColor, active }) => {
     setNav(!nav);
   };
 
-  console.log(active)
+  // console.log(active)
   return (
     <div className=" mr-0 ml-0 md:w-full z-20 fixed top-0 left-0 right-0 font-poppins flex justify-between items-center h-20  mx-auto px-6 " style={{ backgroundColor: bgcolor, color: textColor, transition: "0.3 ease-in-out" }}>
       <div className="flex  justify-between items-center">

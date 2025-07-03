@@ -74,21 +74,30 @@ const AutoSlider = () => {
     <div className="slider">
       <div className="slides" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
         {slidesData.map((slide, index) => (
-          <div className="slide" key={index}>
-            <div className="content">
-              <div id="blockLeft">
-                <div id="imageContainerLeft">
-                  <img src={slide.image} id="image" alt="Slide" />
-                </div>
-                {/* <div id="contentContainerLeft">
-                  <h2>{slide.heading}</h2>
-                  <p>{slide.content}</p>
-                  <button>Read More</button>
-                </div> */}
-              </div>
-            </div>
-          </div>
-        ))}
+  <div className="slide" key={index}>
+    <div className="content">
+      <div id="blockLeft">
+        <div id="imageContainerLeft">
+          {slide.image ? (
+            <img src={slide.image} id="image" alt="Slide" />
+          ) : slide.video ? (
+            <iframe
+              width="100%"
+              height="100%"
+              src={slide.video}
+              title="YouTube video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          ) : null}
+        </div>
+      </div>
+    </div>
+  </div>
+))}
+
       </div>
       <button id="prev" onClick={prevSlide}>
         &#10094;
